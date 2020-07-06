@@ -6,3 +6,15 @@
     './config/icons',
     './config/mediaQueries',
     './config/html';
+
+
+/* UI */
+@import
+    './components/ui/HomeButton',
+    './components/ui/DesktopNavigation',
+    './components/ui/MobileNavigation';
+
+
+/* Pages */
+@import 
+    './components/pages/Home';

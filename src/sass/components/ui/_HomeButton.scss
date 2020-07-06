@@ -1,0 +1,59 @@
+#HomeButton {
+    position: fixed;
+    top: 1em;
+    left: 1em;
+    width: 60px;
+    height: 60px;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 50%;
+
+    @media #{$tablet_breakpoint} {
+        top: 2em;
+        left: 2em;
+    }
+
+    @media #{$tablet_breakpoint} {
+        top: 3em;
+        left: 3em;
+    }
+
+}
+
+
+.HomeButton__logo {
+    img {
+        width: 50px;
+        height: auto;
+        margin: 3px 4.5px;
+        animation: spin;
+        -webkit-animation: spin;
+        animation-iteration-count: infinite;
+        animation-duration: 5s;
+        animation-timing-function: linear;
+    }
+
+    &:hover {
+        img {
+            animation-duration: 2s;
+        }
+    }
+}
+
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@-webkit-keyframes spin {
+    0% {
+        -webkit-transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+    }
+}

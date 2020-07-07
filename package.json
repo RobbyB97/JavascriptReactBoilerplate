@@ -1,7 +1,7 @@
 {
   "name": "javascriptreactboilerplate",
   "version": "1.0.0",
-  "description": "",
+  "description": "A better React boilerplate.",
   "main": "src/server.js",
   "scripts": {
     "start": "node src/server.js",

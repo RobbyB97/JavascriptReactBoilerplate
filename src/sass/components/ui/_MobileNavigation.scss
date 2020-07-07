@@ -1,1 +1,13 @@
-#MobileNavigation {}
+#MobileNavigation {
+    @media #{$desktop_breakpoint} {
+        display: none;
+    }
+}
+
+
+.MobileNavigation__button {
+    position: fixed;
+    top: 12px;
+    right: 12px;
+    font-size: 2em;
+}

@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Render Desktop navigation component 1`] = `
+<section
+  id="DesktopNavigation"
+>
+  <ul
+    className="DesktopNavigation__list"
+  />
+</section>
+`;

@@ -10,13 +10,6 @@ export class HomeButton extends React.Component {
     };
 
 
-    componentDidMount() {
-        /*document.addEventListener('scroll', () => {
-            this.toggle();
-        });*/
-    };
-
-
     render() {
         return (
             <section 
@@ -26,7 +19,7 @@ export class HomeButton extends React.Component {
                     to="/"
                     className="HomeButton__logo"
                 >
-                    <img src="/dist/images/icons/favicon.png" />
+                    <img src="/dist/images/icons/ReactIconWhite.png" />
                 </NavLink>
             </section>
         );

@@ -54,7 +54,7 @@ export class Home extends React.Component {
                     <h4>By Robby Bergers</h4>
                 </header>
                 <section className="Home__content">
-
+                    
                 </section>
             </div>
         );

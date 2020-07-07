@@ -1,8 +1,7 @@
 #Home {
     opacity: 0;
     background: $purple;
-    width: 100vw;
-    height: 100vh;
+    font-family: "Montserrat";
     
     &[data-loading=true] {
         &[data-loaded=true] {
@@ -25,6 +24,18 @@
         margin: 0 60px;
         margin-bottom: 40px;
     }
+
+    @media #{$tablet_breakpoint} {
+        h2 {
+            font-size: 2em;
+        }
+    }
+
+    @media #{$desktop_breakpoint} {
+        h2 {
+            font-size: 2.5em;
+        }
+    }
 }
 
 
@@ -32,4 +43,23 @@
     width: 100%;
     min-height: calc(100vh - 200px);
     background: desaturate(darken($purple, 20%), 60%);
+
+    article {
+        padding: 1em;
+        text-align: center;
+        
+        ul {
+            margin: 0 auto;
+            list-style-type: none;
+            font-size: $l_font;
+            padding-left: 0;
+        }
+    }
+
+    @media #{$desktop_breakpoint} {
+        article {
+            max-width: 1200px;
+            margin: 0 auto;    
+        }
+    }
 }

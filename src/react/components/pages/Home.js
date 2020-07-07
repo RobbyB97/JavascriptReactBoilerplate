@@ -54,7 +54,23 @@ export class Home extends React.Component {
                     <h4>By Robby Bergers</h4>
                 </header>
                 <section className="Home__content">
-                    
+                    <article>
+                        <h3>
+                            This Boilerplate comes bundled with
+                        </h3>
+                        <hr/>
+                        <ul>
+                            <li>React</li>
+                            <li>React Router</li>
+                            <li>Redux</li>
+                            <li>SASS</li>
+                            <li>Webpack</li>
+                            <li>Node.js</li>
+                            <li>Express</li>
+                            <li>Source mapping</li>
+                            <li>Jest</li>
+                        </ul>
+                    </article>
                 </section>
             </div>
         );

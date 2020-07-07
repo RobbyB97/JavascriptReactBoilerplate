@@ -1,0 +1,24 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Render Home page 1`] = `
+<div
+  data-loaded={false}
+  data-loading={false}
+  id="Home"
+>
+  <header
+    className="Home__header"
+  >
+    <UI />
+    <h2>
+      React Redux Boilerplate v1
+    </h2>
+    <h4>
+      By Robby Bergers
+    </h4>
+  </header>
+  <section
+    className="Home__content"
+  />
+</div>
+`;

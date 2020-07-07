@@ -17,17 +17,24 @@ export class Home extends React.Component {
 
 
     componentWillMount() {
+        this.load();
+    };
+
+
+    load = () => {
         const $pageLoader = document.querySelector('.page-loader');
 
         // Disable loader
-        $pageLoader.setAttribute('data-loading', true);
-        this.setState({
-            loading: true
-        })
+        if ($pageLoader) {
+            $pageLoader.setAttribute('data-loading', true);
+            this.setState({
+                loading: true
+            });
+        };
 
         // Fade in React app
         setTimeout(() => {
-            this.setAttribute('data-loaded', true);
+            $pageLoader.setAttribute('data-loaded', true);
             this.setState({
                 loaded: true
             });

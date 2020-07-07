@@ -22,9 +22,15 @@ export class MobileNavigation extends React.Component {
     render() {
         return (
             <section id="MobileNavigation">
+                <div 
+                    className="MobileNavigation__button"
+                    onClick={this.navMenu_Mobile__Toggle}    
+                >
+                    {this.state.navMenu_Mobile ? "✕" : "☰"}
+                </div>
                 <aside 
                     data-active={this.state.navMenu_Mobile}
-                    className="MobileNavigation__Menu"
+                    className="MobileNavigation__menu"
                 >
                     <ul className="MobileNavigation__list">
                         {this.props.internal_links &&

@@ -4,6 +4,10 @@ import {NavLink} from 'react-router-dom';
 import {connect} from 'react-redux';
 
 
+/* Actions */
+import {navMenu_Mobile__Toggle} from '../../redux/actions/ui';
+
+
 /* Component */
 export class MobileNavigation extends React.Component {
     constructor(props) {
@@ -16,6 +20,9 @@ export class MobileNavigation extends React.Component {
     
     navMenu_Mobile__Toggle = () => {
         this.props.navMenu_Mobile__Toggle();
+        this.setState({
+            navMenu_Mobile: !this.state.navMenu_Mobile
+        });
     };
 
 
@@ -65,4 +72,4 @@ const mapDispatchToProps = (dispatch) => ({
 });
 
 
-export default MobileNavigation;
+export default connect(mapStateToProps, mapDispatchToProps)(MobileNavigation);

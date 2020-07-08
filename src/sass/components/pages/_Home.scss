@@ -45,13 +45,13 @@
     background: desaturate(darken($purple, 20%), 60%);
 
     article {
-        padding: 1em;
+        padding: 20px;
         text-align: center;
         
         ul {
             margin: 0 auto;
             list-style-type: none;
-            font-size: $l_font;
+            font-size: $m_font;
             padding-left: 0;
         }
     }

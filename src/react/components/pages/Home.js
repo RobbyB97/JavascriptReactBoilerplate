@@ -71,6 +71,17 @@ export class Home extends React.Component {
                             <li>Jest</li>
                         </ul>
                     </article>
+                    <article>
+                        <a 
+                            className="Home__link"
+                            href="https://github.com/RobbyB97/JavascriptReactBoilerplate"
+                        >
+                            View on GitHub
+                        </a>
+                        <a>
+                            
+                        </a>
+                    </article>
                 </section>
             </div>
         );

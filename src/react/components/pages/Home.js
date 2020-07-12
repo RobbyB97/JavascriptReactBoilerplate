@@ -78,9 +78,6 @@ export class Home extends React.Component {
                         >
                             View on GitHub
                         </a>
-                        <a>
-                            
-                        </a>
                     </article>
                 </section>
             </div>

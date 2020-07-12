@@ -55,6 +55,14 @@ exports[`Render Home page 1`] = `
         </li>
       </ul>
     </article>
+    <article>
+      <a
+        className="Home__link"
+        href="https://github.com/RobbyB97/JavascriptReactBoilerplate"
+      >
+        View on GitHub
+      </a>
+    </article>
   </section>
 </div>
 `;

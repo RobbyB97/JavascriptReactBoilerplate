@@ -16,11 +16,35 @@ export class UI extends React.Component {
     };
 
     render() {
+        const navlinks = [
+            {
+                route: "/",
+                text: "Home"
+            }
+        ]
+        const links = [
+            {
+                text: "Meet the Dev",
+                href: "https://bergers.dev",
+                external: true
+            }, {
+                text: "View on GitHub",
+                href: "https://github.com/RobbyB97/JavascriptReactBoilerplate",
+                external: true
+            }
+        ]
+
         return (
             <section id="UI">
                 <HomeButton />
-                <DesktopNavigation />
-                <MobileNavigation />
+                <DesktopNavigation 
+                    navlinks={navlinks}
+                    links={links}
+                />
+                <MobileNavigation 
+                    navlinks={navlinks}
+                    links={links}
+                />
             </section>
         );
     };

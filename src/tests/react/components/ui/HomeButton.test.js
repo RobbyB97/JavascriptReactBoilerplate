@@ -8,9 +8,16 @@ import {HomeButton} from '../../../../react/components/ui/HomeButton';
 
 
 /* Test Config */
-let component;
+let component, navMenu_Mobile, navMenu_Mobile__Toggle;
 beforeEach(() => {
-    component = shallow(<HomeButton />);
+    navMenu_Mobile__Toggle = jest.fn();
+    navMenu_Mobile = true
+    component = shallow(
+        <HomeButton 
+            navMenu_Mobile={navMenu_Mobile}
+            navMenu_Mobile__Toggle={navMenu_Mobile__Toggle}
+        />
+    );
 });
 
 
@@ -19,3 +26,8 @@ test('Render Home button component', () => {
     expect(component).toMatchSnapshot();
 });
 
+
+test('Toggle nav menu', () => {
+    component.find('#HomeButton').simulate('click');
+    expect(navMenu_Mobile__Toggle).toHaveBeenCalled();
+});

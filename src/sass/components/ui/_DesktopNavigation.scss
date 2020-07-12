@@ -1,1 +1,47 @@
-#DesktopNavigation {}
+#DesktopNavigation {
+    display: none;
+
+    @media #{$desktop_breakpoint} {
+        display: inline-block;
+    }
+}
+
+
+.DesktopNavigation__nav {
+    position: fixed;
+    right: 1.5em;
+    top: 2em;
+    z-index: 8;
+}
+
+
+.DesktopNavigation__list {
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+
+.DesktopNavigation__link {
+    a {
+        color: $white;
+        transition: 100ms;
+        text-decoration: none;
+        opacity: 0.9;
+        font-size: $s_font;
+        border-bottom: 0px solid $white;
+
+        &:hover {
+            transition: 100ms;
+            opacity: 1;
+            border-bottom: 2px solid $white;
+        }
+    }
+
+    &:not(:last-child) {
+        margin-right: $m-font;
+    }
+}

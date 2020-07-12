@@ -1,14 +1,11 @@
 /* Packages */
 import React from 'react';
 import {BrowserRouter, Route, Switch} from 'react-router-dom';
-import {connect} from 'react-redux';
 
 
 /* Pages/Routes */
-import Home from '../components/pages/Home'
+import Home from '../components/pages/Home';
 
-/* Actions */
-// TODO
 
 /* Router */
 export class Router extends React.Component {

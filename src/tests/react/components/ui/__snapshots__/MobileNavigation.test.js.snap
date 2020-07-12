@@ -10,13 +10,12 @@ exports[`Render Mobile navigation component 1`] = `
   >
     ☰
   </div>
-  <aside
+  <nav
     className="MobileNavigation__menu"
-    data-active={false}
   >
     <ul
       className="MobileNavigation__list"
     />
-  </aside>
+  </nav>
 </section>
 `;

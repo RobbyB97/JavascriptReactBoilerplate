@@ -19,6 +19,15 @@ export class MobileNavigation extends React.Component {
 
     
     navMenu_Mobile__Toggle = () => {
+        /* Disable/enable scrolling */
+        const html = document.getElementsByTagName('HTML')[0];
+        if (this.props.navMenu_Mobile) {
+            html.setAttribute('data-Mobile_Nav', 'false');
+        } else {
+            html.setAttribute('data-Mobile_Nav', 'true');
+        }
+        
+        /* Set state */
         this.props.navMenu_Mobile__Toggle();
         this.setState({
             navMenu_Mobile: !this.state.navMenu_Mobile
@@ -33,24 +42,51 @@ export class MobileNavigation extends React.Component {
                     className="MobileNavigation__button"
                     onClick={this.navMenu_Mobile__Toggle}    
                 >
-                    {this.state.navMenu_Mobile ? "✕" : "☰"}
+                    {this.props.navMenu_Mobile ? "✕" : "☰"}
                 </div>
-                <aside 
-                    data-active={this.state.navMenu_Mobile}
+
+                <nav 
+                    data-active={this.props.navMenu_Mobile}
                     className="MobileNavigation__menu"
                 >
                     <ul className="MobileNavigation__list">
-                        {this.props.internal_links &&
-                            this.props.internal_links.map((link) => (
-                                <li key={link.text}>
-                                    <a href={link.href}>
+                        {/* NavLinks */}
+                        {this.props.navlinks && 
+                            this.props.navlinks.map((link) => (
+                                <li 
+                                    key={link.text}
+                                    className="MobileNavigation__link"
+                                >
+                                    <NavLink 
+                                        to={link.route}
+                                        onClick={this.navMenu_Mobile__Toggle}
+                                    >
+                                        {link.text}
+                                    </NavLink>
+                                </li>
+                            ))
+                        }
+
+                        {/* External links */}
+                        {this.props.links &&
+                            this.props.links.map((link) => (
+                                <li 
+                                    key={link.text}
+                                    className="MobileNavigation__link"
+                                >
+                                    <a
+                                        href={link.href}
+                                        onClick={this.navMenu_Mobile__Toggle}
+                                        target="_blank"
+                                        rel="noopener"
+                                    >
                                         {link.text}
                                     </a>
                                 </li>
                             ))
                         }
                     </ul>
-                </aside>
+                </nav>
             </section>
         );
     };

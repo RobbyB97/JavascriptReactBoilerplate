@@ -10,4 +10,47 @@
     top: 12px;
     right: 12px;
     font-size: 2em;
+    z-index: 8;
+}
+
+
+.MobileNavigation__menu {
+    position: fixed;
+    top: 0;
+    right: 0;
+
+    &[data-active=false] {
+        opacity: 0;
+        transition: 200ms;
+        width: 0;
+        height: 0;
+    }
+
+    &[data-active=true] {
+        display: block;
+        opacity: 1;
+        transition: 200ms;
+        background: desaturate(darken($purple, 35%), 70%);
+        z-index: 7;
+        width: 100%;
+        height: 100%;
+    }
+}
+
+
+.MobileNavigation__list {
+    padding: 0;
+    margin-top: 60px;
+}
+
+
+.MobileNavigation__link {
+    list-style-type: none;
+    margin: 1em auto;
+
+    a {
+        color: $white;
+        font-size: 1.4em;
+        text-decoration: none;
+    }
 }

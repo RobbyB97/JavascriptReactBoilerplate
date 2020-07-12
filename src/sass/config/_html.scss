@@ -1,5 +1,19 @@
 html {
     color: $white;
     font-family: "Montserrat", sans-serif;
-    overflow-x: hidden;
+
+    &[data-Mobile_Nav=false] {
+        overflow: unset;
+        overflow-x: hidden;
+    }
+    
+    &[data-Mobile_Nav=true] {
+        overflow: hidden;
+    }
+
+    @media #{$desktop_breakpoint} {
+        &[data-Mobile_Nav=false], &[data-Mobile_Nav=true] {
+            overflow: unset;
+        }
+    }
 }

@@ -1,0 +1,57 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Render UI component 1`] = `
+<section
+  id="UI"
+>
+  <Connect(HomeButton) />
+  <DesktopNavigation
+    links={
+      Array [
+        Object {
+          "external": true,
+          "href": "https://bergers.dev",
+          "text": "Meet the Dev",
+        },
+        Object {
+          "external": true,
+          "href": "https://github.com/RobbyB97/JavascriptReactBoilerplate",
+          "text": "View on GitHub",
+        },
+      ]
+    }
+    navlinks={
+      Array [
+        Object {
+          "route": "/",
+          "text": "Home",
+        },
+      ]
+    }
+  />
+  <Connect(MobileNavigation)
+    links={
+      Array [
+        Object {
+          "external": true,
+          "href": "https://bergers.dev",
+          "text": "Meet the Dev",
+        },
+        Object {
+          "external": true,
+          "href": "https://github.com/RobbyB97/JavascriptReactBoilerplate",
+          "text": "View on GitHub",
+        },
+      ]
+    }
+    navlinks={
+      Array [
+        Object {
+          "route": "/",
+          "text": "Home",
+        },
+      ]
+    }
+  />
+</section>
+`;

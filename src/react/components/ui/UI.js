@@ -5,8 +5,8 @@ import {connect} from 'react-redux';
 
 /* Components */
 import HomeButton from './HomeButton';
-import DesktopNavigation from './DesktopNavigation';
-import MobileNavigation from './MobileNavigation';
+import DesktopNavigation from './DesktopNavigation/DesktopNavigation';
+import MobileNavigation from './MobileNavigation/MobileNavigation';
 
 
 /* Component */
@@ -16,13 +16,17 @@ export class UI extends React.Component {
     };
 
     render() {
-        const navlinks = [
+        const internal_links = [
             {
                 route: "/",
-                text: "Home"
+                text: "Home",
+                sublinks: [{
+                    text: "Home",
+                    route: "/"
+                }]
             }
         ]
-        const links = [
+        const external_links = [
             {
                 text: "Meet the Dev",
                 href: "https://bergers.dev",
@@ -30,20 +34,31 @@ export class UI extends React.Component {
             }, {
                 text: "View on GitHub",
                 href: "https://github.com/RobbyB97/JavascriptReactBoilerplate",
-                external: true
+                external: true,
+                sublinks: [{
+                    text: "Test 1",
+                    href: "google.com",
+                    external: true
+                }, {
+                    text: "Test 1",
+                    href: "google.com",
+                    external: true                    
+                }]
             }
         ]
 
         return (
             <section id="UI">
                 <HomeButton />
+
                 <DesktopNavigation 
-                    navlinks={navlinks}
-                    links={links}
+                    internal_links={internal_links}
+                    external_links={external_links}
                 />
+                
                 <MobileNavigation 
-                    navlinks={navlinks}
-                    links={links}
+                    internal_links={internal_links}
+                    external_links={external_links}                    
                 />
             </section>
         );

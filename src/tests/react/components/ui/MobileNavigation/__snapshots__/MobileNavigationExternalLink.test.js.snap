@@ -1,0 +1,14 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Render MobileNavigationExternalLink component 1`] = `
+<li
+  className="MobileNavigationLink"
+>
+  <a
+    className="MobileNavigationLink__link"
+    onClick={[Function]}
+    rel="noopener"
+    target="_blank"
+  />
+</li>
+`;

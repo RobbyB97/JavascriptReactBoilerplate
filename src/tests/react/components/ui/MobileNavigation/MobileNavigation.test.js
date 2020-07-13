@@ -4,7 +4,7 @@ import {shallow} from 'enzyme';
 
 
 /* Component */
-import {MobileNavigation} from '../../../../react/components/ui/MobileNavigation';
+import {MobileNavigation} from '../../../../../react/components/ui/MobileNavigation/MobileNavigation';
 
 
 /* Test Config */
@@ -16,7 +16,7 @@ beforeEach(() => {
 
 
 /* Tests */
-test('Render Mobile navigation component', () => {
+test('Render MobileNavigation component', () => {
     expect(component).toMatchSnapshot();
     expect(component.state('navMenu_Mobile')).toBe(false);
 });

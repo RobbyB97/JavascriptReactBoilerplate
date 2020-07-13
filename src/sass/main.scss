@@ -10,10 +10,12 @@
 
 /* UI */
 @import
+    './components/ui/UI',
     './components/ui/HomeButton',
-    './components/ui/DesktopNavigation',
-    './components/ui/MobileNavigation',
-    './components/ui/UI';
+    './components/ui/DesktopNavigation/DesktopNavigation',
+    './components/ui/DesktopNavigation/DesktopNavigationLink',
+    './components/ui/MobileNavigation/MobileNavigation',
+    './components/ui/MobileNavigation/MobileNavigationLink';
 
 
 /* Pages */

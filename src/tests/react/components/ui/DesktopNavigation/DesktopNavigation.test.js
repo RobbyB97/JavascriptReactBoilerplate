@@ -4,7 +4,7 @@ import {shallow} from 'enzyme';
 
 
 /* Component */
-import {DesktopNavigation} from '../../../../react/components/ui/DesktopNavigation';
+import {DesktopNavigation} from '../../../../../react/components/ui/DesktopNavigation/DesktopNavigation';
 
 
 /* Test Config */
@@ -15,7 +15,7 @@ beforeEach(() => {
 
 
 /* Tests */
-test('Render Desktop navigation component', () => {
+test('Render DesktopNavigation component', () => {
     expect(component).toMatchSnapshot();
 });
 

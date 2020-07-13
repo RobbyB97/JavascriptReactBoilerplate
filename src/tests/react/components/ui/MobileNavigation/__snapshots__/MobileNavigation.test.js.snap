@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Render Mobile navigation component 1`] = `
+exports[`Render MobileNavigation component 1`] = `
 <section
   id="MobileNavigation"
 >

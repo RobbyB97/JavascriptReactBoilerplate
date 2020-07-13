@@ -1,0 +1,14 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Render MobileNavigationInternalLink component 1`] = `
+<li
+  className="MobileNavigationLink"
+>
+  <NavLink
+    activeClassName="active"
+    aria-current="page"
+    className="MobileNavigationLink__link"
+    onClick={[Function]}
+  />
+</li>
+`;

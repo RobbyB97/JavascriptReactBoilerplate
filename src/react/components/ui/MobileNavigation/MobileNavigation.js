@@ -1,11 +1,15 @@
 /* Packages */
 import React from 'react';
-import {NavLink} from 'react-router-dom';
 import {connect} from 'react-redux';
 
 
 /* Actions */
-import {navMenu_Mobile__Toggle} from '../../redux/actions/ui';
+import {navMenu_Mobile__Toggle} from '../../../redux/actions/ui';
+
+
+/* Components */
+import MobileNavigationInternalLink from './MobileNavigationInternalLink';
+import MobileNavigationExternalLink from './MobileNavigationExternalLink';
 
 
 /* Component */
@@ -50,39 +54,15 @@ export class MobileNavigation extends React.Component {
                     className="MobileNavigation__menu"
                 >
                     <ul className="MobileNavigation__list">
-                        {/* NavLinks */}
-                        {this.props.navlinks && 
-                            this.props.navlinks.map((link) => (
-                                <li 
-                                    key={link.text}
-                                    className="MobileNavigation__link"
-                                >
-                                    <NavLink 
-                                        to={link.route}
-                                        onClick={this.navMenu_Mobile__Toggle}
-                                    >
-                                        {link.text}
-                                    </NavLink>
-                                </li>
+                        {this.props.internal_links &&
+                            this.props.internal_links.map((link) => (
+                                <MobileNavigationInternalLink {...link}/>
                             ))
                         }
 
-                        {/* External links */}
-                        {this.props.links &&
-                            this.props.links.map((link) => (
-                                <li 
-                                    key={link.text}
-                                    className="MobileNavigation__link"
-                                >
-                                    <a
-                                        href={link.href}
-                                        onClick={this.navMenu_Mobile__Toggle}
-                                        target="_blank"
-                                        rel="noopener"
-                                    >
-                                        {link.text}
-                                    </a>
-                                </li>
+                        {this.props.external_links &&
+                            this.props.external_links.map((link) => (
+                                <MobileNavigationExternalLink {...link}/>
                             ))
                         }
                     </ul>

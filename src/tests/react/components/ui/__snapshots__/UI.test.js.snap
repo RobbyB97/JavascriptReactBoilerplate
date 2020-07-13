@@ -6,7 +6,7 @@ exports[`Render UI component 1`] = `
 >
   <Connect(HomeButton) />
   <DesktopNavigation
-    links={
+    external_links={
       Array [
         Object {
           "external": true,
@@ -16,21 +16,39 @@ exports[`Render UI component 1`] = `
         Object {
           "external": true,
           "href": "https://github.com/RobbyB97/JavascriptReactBoilerplate",
+          "sublinks": Array [
+            Object {
+              "external": true,
+              "href": "google.com",
+              "text": "Test 1",
+            },
+            Object {
+              "external": true,
+              "href": "google.com",
+              "text": "Test 1",
+            },
+          ],
           "text": "View on GitHub",
         },
       ]
     }
-    navlinks={
+    internal_links={
       Array [
         Object {
           "route": "/",
+          "sublinks": Array [
+            Object {
+              "route": "/",
+              "text": "Home",
+            },
+          ],
           "text": "Home",
         },
       ]
     }
   />
   <Connect(MobileNavigation)
-    links={
+    external_links={
       Array [
         Object {
           "external": true,
@@ -40,14 +58,32 @@ exports[`Render UI component 1`] = `
         Object {
           "external": true,
           "href": "https://github.com/RobbyB97/JavascriptReactBoilerplate",
+          "sublinks": Array [
+            Object {
+              "external": true,
+              "href": "google.com",
+              "text": "Test 1",
+            },
+            Object {
+              "external": true,
+              "href": "google.com",
+              "text": "Test 1",
+            },
+          ],
           "text": "View on GitHub",
         },
       ]
     }
-    navlinks={
+    internal_links={
       Array [
         Object {
           "route": "/",
+          "sublinks": Array [
+            Object {
+              "route": "/",
+              "text": "Home",
+            },
+          ],
           "text": "Home",
         },
       ]

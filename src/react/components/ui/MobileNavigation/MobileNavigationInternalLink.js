@@ -4,6 +4,11 @@ import {NavLink} from 'react-router-dom';
 import {connect} from 'react-redux';
 
 
+/* Actions */
+import {navMenu_Mobile__Toggle} from '../../../redux/actions/ui';
+
+
+
 /* Component */
 export class MobileNavigationInternalLink extends React.Component {
     constructor(props) {
@@ -66,10 +71,7 @@ export class MobileNavigationInternalLink extends React.Component {
                                 <NavLink
                                     className="MobileNavigationLink__link"
                                     to={sublink.route}
-                                    onClick={
-                                        this.navMenu_Mobile__Toggle & 
-                                        this.sublink_Menu__Toggle
-                                    }
+                                    onClick={this.navMenu_Mobile__Toggle}
                                 >
                                     {sublink.text}
                                 </NavLink>

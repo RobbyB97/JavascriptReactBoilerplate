@@ -78,6 +78,13 @@ export class Home extends React.Component {
                         >
                             View on GitHub
                         </a>
+
+                        <a
+                            className="Home__link"
+                            href="https://paypal.me/robbybobby123"
+                        >
+                            Donate
+                        </a>
                     </article>
                 </section>
             </div>

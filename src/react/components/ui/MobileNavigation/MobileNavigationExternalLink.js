@@ -3,6 +3,10 @@ import React from 'react';
 import {connect} from 'react-redux';
 
 
+/* Actions */
+import {navMenu_Mobile__Toggle} from '../../../redux/actions/ui';
+
+
 /* Component */
 export class MobileNavigationExternalLink extends React.Component {
     constructor(props) {
@@ -44,8 +48,9 @@ export class MobileNavigationExternalLink extends React.Component {
                 {/* Sublink menu button */}
                 {this.props.sublinks &&
                     <button
-                        className="MobileNavigation__sublink_button"
+                        className="MobileNavigationLink__sublink_button"
                         onClick={this.sublink_Menu__Toggle}
+                        data-active={this.state.sublink_Menu}
                     >
                         ▼
                     </button>
@@ -60,10 +65,11 @@ export class MobileNavigationExternalLink extends React.Component {
                     >
                         {this.props.sublinks.map((sublink) => (
                             <li
-                                className="MobileNavigation__sublink_link"
+                                className="MobileNavigationLink__sublink_link"
                                 key={sublink.text}
                             >
                                 <a
+                                    className="MobileNavigationLink__link"
                                     href={sublink.href}
                                     onClick={
                                         this.navMenu_Mobile__Toggle &

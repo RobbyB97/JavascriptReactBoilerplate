@@ -43,8 +43,9 @@ export class MobileNavigationInternalLink extends React.Component {
                 {/* Sublink menu button */}
                 {this.props.sublinks &&
                     <button
-                        className="MobileNavigation__sublink_button"
+                        className="MobileNavigationLink__sublink_button"
                         onClick={this.sublink_Menu__Toggle}
+                        data-active={this.state.sublink_Menu}
                     >
                         ▼
                     </button>
@@ -63,6 +64,7 @@ export class MobileNavigationInternalLink extends React.Component {
                                 key={sublink.text}
                             >
                                 <NavLink
+                                    className="MobileNavigationLink__link"
                                     to={sublink.route}
                                     onClick={
                                         this.navMenu_Mobile__Toggle & 

@@ -40,7 +40,7 @@ export class UI extends React.Component {
                     href: "google.com",
                     external: true
                 }, {
-                    text: "Test 1",
+                    text: "Test 2",
                     href: "google.com",
                     external: true                    
                 }]

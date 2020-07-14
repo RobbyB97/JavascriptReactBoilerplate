@@ -8,6 +8,12 @@
     './config/html';
 
 
+/* Common Components */
+@import
+    './components/common/Header',
+    './components/common/Footer';
+
+
 /* UI Components */
 @import
     './components/ui/Navigation',

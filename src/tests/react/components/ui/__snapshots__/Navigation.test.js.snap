@@ -1,8 +1,8 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Render UI component 1`] = `
+exports[`Render Navigation component 1`] = `
 <section
-  id="UI"
+  id="Navigation"
 >
   <Connect(HomeButton) />
   <DesktopNavigation
@@ -20,12 +20,12 @@ exports[`Render UI component 1`] = `
             Object {
               "external": true,
               "href": "google.com",
-              "text": "Test 1",
+              "text": "Google",
             },
             Object {
               "external": true,
               "href": "google.com",
-              "text": "Test 1",
+              "text": "Test 2",
             },
           ],
           "text": "View on GitHub",
@@ -62,12 +62,12 @@ exports[`Render UI component 1`] = `
             Object {
               "external": true,
               "href": "google.com",
-              "text": "Test 1",
+              "text": "Google",
             },
             Object {
               "external": true,
               "href": "google.com",
-              "text": "Test 1",
+              "text": "Test 2",
             },
           ],
           "text": "View on GitHub",

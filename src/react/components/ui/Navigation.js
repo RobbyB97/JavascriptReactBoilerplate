@@ -1,6 +1,5 @@
 /* Packages */
 import React from 'react';
-import {connect} from 'react-redux';
 
 
 /* Components */
@@ -10,7 +9,7 @@ import MobileNavigation from './MobileNavigation/MobileNavigation';
 
 
 /* Component */
-export class UI extends React.Component {
+export class Navigation extends React.Component {
     constructor(props) {
         super(props);
     };
@@ -36,7 +35,7 @@ export class UI extends React.Component {
                 href: "https://github.com/RobbyB97/JavascriptReactBoilerplate",
                 external: true,
                 sublinks: [{
-                    text: "Test 1",
+                    text: "Google",
                     href: "google.com",
                     external: true
                 }, {
@@ -48,7 +47,7 @@ export class UI extends React.Component {
         ]
 
         return (
-            <section id="UI">
+            <section id="Navigation">
                 <HomeButton />
 
                 <DesktopNavigation 
@@ -66,4 +65,4 @@ export class UI extends React.Component {
 };
 
 
-export default UI;
+export default Navigation;

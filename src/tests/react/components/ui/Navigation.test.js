@@ -4,18 +4,18 @@ import {shallow} from 'enzyme';
 
 
 /* Component */
-import {UI} from '../../../../react/components/ui/UI';
+import {Navigation} from '../../../../react/components/ui/Navigation';
 
 
 /* Test Config */
 let component;
 beforeEach(() => {
-    component = shallow(<UI />);
+    component = shallow(<Navigation />);
 });
 
 
 /* Tests */
-test('Render UI component', () => {
+test('Render Navigation component', () => {
     expect(component).toMatchSnapshot();
 });
 

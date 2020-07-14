@@ -8,9 +8,9 @@
     './config/html';
 
 
-/* UI */
+/* UI Components */
 @import
-    './components/ui/UI',
+    './components/ui/Navigation',
     './components/ui/HomeButton',
     './components/ui/DesktopNavigation/DesktopNavigation',
     './components/ui/DesktopNavigation/DesktopNavigationLink',
@@ -18,6 +18,6 @@
     './components/ui/MobileNavigation/MobileNavigationLink';
 
 
-/* Pages */
+/* Page Components */
 @import 
     './components/pages/Home';

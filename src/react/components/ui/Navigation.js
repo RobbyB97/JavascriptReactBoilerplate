@@ -18,11 +18,7 @@ export class Navigation extends React.Component {
         const internal_links = [
             {
                 route: "/",
-                text: "Home",
-                sublinks: [{
-                    text: "Home",
-                    route: "/"
-                }]
+                text: "Home"
             }
         ]
         const external_links = [
@@ -33,16 +29,7 @@ export class Navigation extends React.Component {
             }, {
                 text: "View on GitHub",
                 href: "https://github.com/RobbyB97/JavascriptReactBoilerplate",
-                external: true,
-                sublinks: [{
-                    text: "Google",
-                    href: "google.com",
-                    external: true
-                }, {
-                    text: "Test 2",
-                    href: "google.com",
-                    external: true                    
-                }]
+                external: true
             }
         ]
 

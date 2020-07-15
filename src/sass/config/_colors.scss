@@ -3,3 +3,9 @@ $gray: #414141;
 $white: #f8f8f8;
 
 $purple: #6563ff;
+$purple_shade: desaturate(darken($purple, 15%), 30%);
+$purple_dark: desaturate(darken($purple, 20%), 60%);
+
+$shadow: rgba(0, 0, 0, 0.3);
+$shadow_light: rgba(0, 0, 0, 0.1);
+$shadow_thick: rgba(0, 0, 0, 0.5);

@@ -2,10 +2,7 @@
 import React from 'react';
 
 
-/* Components */
-import UI from '../ui/UI';
-
-
+/* Component */
 export class Home extends React.Component {
     constructor(props) {
         super(props);
@@ -48,11 +45,11 @@ export class Home extends React.Component {
                 data-loading={this.state.loading}
                 data-loaded={this.state.loaded}
             >
-                <header className="Home__header">
-                    <UI/>
+                <section className="Home__header">
                     <h2>React Redux Boilerplate v1</h2>
                     <h4>By Robby Bergers</h4>
-                </header>
+                </section>
+
                 <section className="Home__content">
                     <article>
                         <h3>
@@ -71,6 +68,7 @@ export class Home extends React.Component {
                             <li>Jest</li>
                         </ul>
                     </article>
+                    
                     <article>
                         <a 
                             className="Home__link"
@@ -78,6 +76,12 @@ export class Home extends React.Component {
                         >
                             View on GitHub
                         </a>
+                    </article>
+
+                    <article>
+                        <p>
+                            Creating software such as this boilerplate takes a lot of time, effort, attention to detail, and the occasional excellent anger management. If you found this boilerplate helpful, please consider <a href="https://paypal.me/robbybobby123">donating</a>.
+                        </p>
 
                         <a
                             className="Home__link"

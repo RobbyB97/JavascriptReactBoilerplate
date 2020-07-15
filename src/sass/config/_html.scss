@@ -11,9 +11,13 @@ html {
         overflow: hidden;
     }
 
-    @media #{$desktop_breakpoint} {
+    @media #{$tablet_breakpoint} {
         &[data-Mobile_Nav=false], &[data-Mobile_Nav=true] {
             overflow: unset;
         }
     }
+}
+
+a {
+    color: $white;
 }

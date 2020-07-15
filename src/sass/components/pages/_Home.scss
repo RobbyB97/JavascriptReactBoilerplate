@@ -34,6 +34,7 @@
     @media #{$desktop_breakpoint} {
         h2 {
             font-size: 2.5em;
+            padding-top: 70px;
         }
     }
 }
@@ -42,7 +43,7 @@
 .Home__content {
     width: 100%;
     min-height: calc(100vh - 200px);
-    background: desaturate(darken($purple, 20%), 60%);
+    background: $purple_dark;
 
     article {
         padding: 20px;
@@ -53,6 +54,17 @@
             list-style-type: none;
             font-size: $m_font;
             padding-left: 0;
+        }
+    }
+
+    @media #{$tablet_breakpoint} {
+        article {
+            width: 80%;
+            margin: 0 auto;
+
+            p {
+                font-size: $m_font;
+            }
         }
     }
 
@@ -69,10 +81,11 @@
     padding: 8px;
     text-decoration: none;
     background: $purple;
-    border-bottom: 4px solid desaturate(darken($purple, 15%), 30%);
+    border-bottom: 4px solid $purple_shade;
     border-radius: 2px 2px 6px 6px;
     color: $white;
     font-weight: bold;
+    font-size: $m_font;
     margin: 0 4px;
 
     &:active {

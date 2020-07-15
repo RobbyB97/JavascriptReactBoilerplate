@@ -16,18 +16,6 @@ exports[`Render Navigation component 1`] = `
         Object {
           "external": true,
           "href": "https://github.com/RobbyB97/JavascriptReactBoilerplate",
-          "sublinks": Array [
-            Object {
-              "external": true,
-              "href": "google.com",
-              "text": "Google",
-            },
-            Object {
-              "external": true,
-              "href": "google.com",
-              "text": "Test 2",
-            },
-          ],
           "text": "View on GitHub",
         },
       ]
@@ -36,12 +24,6 @@ exports[`Render Navigation component 1`] = `
       Array [
         Object {
           "route": "/",
-          "sublinks": Array [
-            Object {
-              "route": "/",
-              "text": "Home",
-            },
-          ],
           "text": "Home",
         },
       ]
@@ -58,18 +40,6 @@ exports[`Render Navigation component 1`] = `
         Object {
           "external": true,
           "href": "https://github.com/RobbyB97/JavascriptReactBoilerplate",
-          "sublinks": Array [
-            Object {
-              "external": true,
-              "href": "google.com",
-              "text": "Google",
-            },
-            Object {
-              "external": true,
-              "href": "google.com",
-              "text": "Test 2",
-            },
-          ],
           "text": "View on GitHub",
         },
       ]
@@ -78,12 +48,6 @@ exports[`Render Navigation component 1`] = `
       Array [
         Object {
           "route": "/",
-          "sublinks": Array [
-            Object {
-              "route": "/",
-              "text": "Home",
-            },
-          ],
           "text": "Home",
         },
       ]

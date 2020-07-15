@@ -1,7 +1,7 @@
 .MobileNavigationLink {
     list-style-type: none;
     padding: 0;
-    background: rgba(0, 0, 0, 0.1);
+    background: $shadow_light;
     min-height: 3em;
     
     &:not(:last-child) {
@@ -14,10 +14,11 @@
     text-decoration: none;
     color: $white;
     font-size: 1.5em;
-    margin-top: 0.5em;
     text-align: left;
     float: left;
-    margin-left: 8px;
+    margin: 0;
+    width: calc(100% - calc(3em + 3px));
+    padding: 10px;
 }
 
 
@@ -31,16 +32,18 @@
     color: $white;
     border: 0;
     background: transparent;
-    border-left: 3px solid rgba(0, 0, 0, 0.2);
-
 
     &[data-active=false] {
-        //background: rgba(0, 0, 0, 0.2);
-        translate: 180deg;
+        border-left: 3px solid $shadow;
     }
 
     &[data-active=true] {
-        background: transparent;
+        transform: rotate(180deg);
+        border-right: 3px solid $shadow;
+    }
+
+    &:active, &:focus {
+        outline: 0px;
     }
 }
 
@@ -49,6 +52,7 @@
     list-style-type: none;
     width: 100%;
     overflow: hidden;
+    padding-left: 0;
 
     &[data-active=false] {
         height: 0;
@@ -58,18 +62,33 @@
 
     &[data-active=true] {
         height: auto;
-        background-color: rgba(0, 0, 0, 0.2);
+        background-color: $shadow;
         color: $white;
     }
 }
 
 
-.MobileNavigationLink__sublink_link {
+.MobileNavigationLink__sublink {
     float: left;
     clear: both;
-    margin: 8px;
-
-    > .MobileNavigationLink__link {
-        margin-top: 0;
+    padding: 0;
+    width: 100%;
+    
+    &:not(:last-child) {
+        border-bottom: 1px solid $shadow;
     }
+}
+
+.MobileNavigationLink__sublink_link {
+    width: 100%;
+    margin: 0;
+    padding: 10px;
+    padding-left: 30px;
+    text-decoration: none;
+    color: $white;
+    font-size: 1.5em;
+    text-align: left;
+    float: left;
+    margin: 0;
+    width: 100%;
 }

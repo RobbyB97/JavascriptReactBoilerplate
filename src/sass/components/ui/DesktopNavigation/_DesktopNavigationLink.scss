@@ -1,0 +1,59 @@
+.DesktopNavigationLink {
+    transition: 100ms;
+    min-width: 120px;
+
+    &:not(:last-child) {
+        margin-right: 2em;
+    }
+}
+
+
+/* 'Active' state */
+.DesktopNavigationLink:hover {
+    .DesktopNavigationLink__link {
+        border-bottom: 2px solid $white;
+    }
+
+    .DesktopNavigationLink__sublink_list {
+        height: auto;
+    }
+}
+
+
+.DesktopNavigationLink__link {
+    color: $white;
+    text-decoration: none;
+    transition: 100ms;
+    display: block;
+    text-align: center;
+}
+
+
+.DesktopNavigationLink__sublink_list {
+    list-style-type: none;
+    overflow: hidden;
+    background: $shadow;
+    padding: 0;
+    height: 0;
+}
+
+
+.DesktopNavigationLink__sublink {
+    &:not(:last-child) {
+        border-bottom: 1px solid $shadow;
+    }
+}
+
+
+.DesktopNavigationLink__sublink_link {
+    color: $white;
+    text-decoration: none;
+    display: block;
+    padding: 8px;
+    text-align: center;
+    font-size: $s_font;
+    
+    &:hover {
+        background: $shadow_thick;
+    }
+}

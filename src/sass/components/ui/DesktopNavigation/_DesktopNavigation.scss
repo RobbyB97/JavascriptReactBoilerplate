@@ -2,7 +2,7 @@
     display: none;
 
     @media #{$desktop_breakpoint} {
-        display: inline-block;
+        display: block;
     }
 }
 

@@ -53,7 +53,10 @@ export class MobileNavigation extends React.Component {
                     data-active={this.props.navMenu_Mobile}
                     className="MobileNavigation__menu"
                 >
-                    <ul className="MobileNavigation__list">
+                    <ul 
+                        className="MobileNavigation__list"
+                        data-active={this.props.navMenu_Mobile}
+                    >
                         {this.props.internal_links &&
                             this.props.internal_links.map((link) => (
                                 <MobileNavigationInternalLink {...link}/>

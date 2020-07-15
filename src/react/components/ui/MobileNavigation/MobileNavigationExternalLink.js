@@ -65,11 +65,11 @@ export class MobileNavigationExternalLink extends React.Component {
                     >
                         {this.props.sublinks.map((sublink) => (
                             <li
-                                className="MobileNavigationLink__sublink_link"
+                                className="MobileNavigationLink__sublink"
                                 key={sublink.text}
                             >
                                 <a
-                                    className="MobileNavigationLink__link"
+                                    className="MobileNavigationLink__sublink_link"
                                     href={sublink.href}
                                     onClick={
                                         this.navMenu_Mobile__Toggle &

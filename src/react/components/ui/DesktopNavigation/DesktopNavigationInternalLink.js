@@ -26,10 +26,13 @@ export class DesktopNavigationInternalLink extends React.Component {
                     >
                         {this.props.sublinks.map((sublink) => (
                             <li
-                                className="DesktopNavigationLink__sublink_link"
+                                className="DesktopNavigationLink__sublink"
                                 key={sublink.text}
                             >
-                                <NavLink to={sublink.route}>
+                                <NavLink 
+                                    className="DesktopNavigationLink__sublink_link"
+                                    to={sublink.route}
+                                >
                                     {sublink.text}
                                 </NavLink>
                             </li>

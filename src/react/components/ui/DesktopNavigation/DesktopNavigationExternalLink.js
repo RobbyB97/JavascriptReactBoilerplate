@@ -27,10 +27,13 @@ export class DesktopNavigationExternalLink extends React.Component {
                     <ul className="DesktopNavigationLink__sublink_list">
                         {this.props.sublinks.map((sublink) => (
                             <li
-                                className="DesktopNavigation__sublink_link"
+                                className="DesktopNavigationLink__sublink"
                                 key={sublink.text}
                             >
-                                <a href={sublink.href}>
+                                <a 
+                                    className="DesktopNavigationLink__sublink_link"
+                                    href={sublink.href}
+                                >
                                     {sublink.text}
                                 </a>
                             </li>

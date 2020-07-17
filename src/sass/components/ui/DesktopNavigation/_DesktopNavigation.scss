@@ -22,6 +22,9 @@
     flex-direction: row;
     margin-top: 0;
     margin-bottom: 0;
+    width: calc(100vw - 120px);
+    flex-wrap: wrap;
+    justify-content: flex-end;
 }
 
 

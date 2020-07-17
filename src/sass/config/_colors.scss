@@ -5,6 +5,7 @@ $white: #f8f8f8;
 $purple: #6563ff;
 $purple_shade: desaturate(darken($purple, 15%), 30%);
 $purple_dark: desaturate(darken($purple, 20%), 60%);
+$purple_light: saturate(lighten($purple, 10%), 20%);
 
 $shadow: rgba(0, 0, 0, 0.3);
 $shadow_light: rgba(0, 0, 0, 0.1);

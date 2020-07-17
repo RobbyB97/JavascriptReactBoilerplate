@@ -8,10 +8,16 @@ import {Home} from '../../../../react/components/pages/Home';
 
 
 /* Test Config */
-let load, component;
+let component, load, page_ID__Set;
 beforeEach(() => {
     load = jest.fn();
-    component = shallow(<Home load={load}/>);
+    page_ID__Set = jest.fn();
+    component = shallow(
+        <Home 
+            load={load}
+            page_ID__Set={page_ID__Set}
+        />
+    );
 });
 
 
@@ -33,4 +39,10 @@ test('Load function', () => {
     }, 500);
 });
 
+
+test('Page_ID__Set function', () => {
+    setTimeout(() => {
+        expect(page_ID__Set).toHaveBeenCalled();
+    }, 500);
+});
 

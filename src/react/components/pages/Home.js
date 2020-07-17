@@ -1,5 +1,10 @@
 /* Packages */
 import React from 'react';
+import {connect} from 'react-redux';
+
+
+/* Actions */
+import {page_ID__Set} from '../../redux/actions/page';
 
 
 /* Component */
@@ -15,6 +20,12 @@ export class Home extends React.Component {
 
     componentWillMount() {
         this.load();
+        this.page_ID__Set('Home');
+    };
+
+
+    page_ID__Set = (id) => {
+        this.props.page_ID__Set('Home');
     };
 
 
@@ -97,4 +108,12 @@ export class Home extends React.Component {
 };
 
 
-export default Home;
+/* Connect to store */
+const mapDispatchToProps = (dispatch) => ({
+    page_ID__Set: (id) => {
+        dispatch(page_ID__Set(id));
+    }
+});
+
+
+export default connect(undefined, mapDispatchToProps)(Home);

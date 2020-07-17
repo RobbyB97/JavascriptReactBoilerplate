@@ -1,5 +1,6 @@
 /* Packages */
 import React from 'react';
+import {connect} from 'react-redux';
 import {BrowserRouter, Route, Switch} from 'react-router-dom';
 
 
@@ -22,7 +23,10 @@ export class Router extends React.Component {
     render() {
         return (
             <BrowserRouter>
-                <div>
+                <div 
+                    id="Router"
+                    data-page_ID={this.props.page_ID}
+                >
                     <Header />
 
                     <Switch>
@@ -41,4 +45,12 @@ export class Router extends React.Component {
 }
 
 
-export default Router;
+/* Connect to store */
+const mapStateToProps = (state) => {
+    return {
+        page_ID: state.page.id
+    };
+};
+
+
+export default connect(mapStateToProps, undefined)(Router);

@@ -3,8 +3,7 @@ import React from 'react';
 
 
 /* Components */
-import DesktopNavigationInternalLink from './DesktopNavigationInternalLink';
-import DesktopNavigationExternalLink from './DesktopNavigationExternalLink';
+import DesktopNavigationLink from './DesktopNavigationLink';
 
 
 /* Component */
@@ -18,19 +17,15 @@ export class DesktopNavigation extends React.Component {
             <section id="DesktopNavigation">
                 <nav className="DesktopNavigation__nav">
                     <ul className="DesktopNavigation__list">
-                        {/* Internal links */}
-                        {this.props.internal_links &&
-                            this.props.internal_links.map((link) => (
-                                <DesktopNavigationInternalLink {...link}/>
+                        {/* Links */}
+                        {this.props.links &&
+                            this.props.links.map((link) => (
+                                <DesktopNavigationLink 
+                                    key={link.text}
+                                    {...link}
+                                />
                             ))
-                        }
-
-                        {/* External links */}
-                        {this.props.external_links &&
-                            this.props.external_links.map((link) => (
-                                <DesktopNavigationExternalLink {...link}/>
-                            ))
-                        }                    
+                        }                 
                     </ul>
                 </nav>
             </section>

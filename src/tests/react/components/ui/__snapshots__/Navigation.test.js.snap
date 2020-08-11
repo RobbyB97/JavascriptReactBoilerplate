@@ -6,49 +6,43 @@ exports[`Render Navigation component 1`] = `
 >
   <Connect(HomeButton) />
   <DesktopNavigation
-    external_links={
+    links={
       Array [
         Object {
-          "external": true,
+          "href": "/",
+          "internal": true,
+          "text": "Home",
+        },
+        Object {
           "href": "https://bergers.dev",
+          "internal": false,
           "text": "Meet the Dev",
         },
         Object {
-          "external": true,
           "href": "https://github.com/RobbyB97/JavascriptReactBoilerplate",
+          "internal": false,
           "text": "View on GitHub",
-        },
-      ]
-    }
-    internal_links={
-      Array [
-        Object {
-          "route": "/",
-          "text": "Home",
         },
       ]
     }
   />
   <Connect(MobileNavigation)
-    external_links={
+    links={
       Array [
         Object {
-          "external": true,
+          "href": "/",
+          "internal": true,
+          "text": "Home",
+        },
+        Object {
           "href": "https://bergers.dev",
+          "internal": false,
           "text": "Meet the Dev",
         },
         Object {
-          "external": true,
           "href": "https://github.com/RobbyB97/JavascriptReactBoilerplate",
+          "internal": false,
           "text": "View on GitHub",
-        },
-      ]
-    }
-    internal_links={
-      Array [
-        Object {
-          "route": "/",
-          "text": "Home",
         },
       ]
     }

@@ -8,8 +8,7 @@ import {navMenu_Mobile__Toggle} from '../../../redux/actions/ui';
 
 
 /* Components */
-import MobileNavigationInternalLink from './MobileNavigationInternalLink';
-import MobileNavigationExternalLink from './MobileNavigationExternalLink';
+import MobileNavigationLink from './MobileNavigationLink';
 
 
 /* Component */
@@ -57,15 +56,13 @@ export class MobileNavigation extends React.Component {
                         className="MobileNavigation__list"
                         data-active={this.props.navMenu_Mobile}
                     >
-                        {this.props.internal_links &&
-                            this.props.internal_links.map((link) => (
-                                <MobileNavigationInternalLink {...link}/>
-                            ))
-                        }
-
-                        {this.props.external_links &&
-                            this.props.external_links.map((link) => (
-                                <MobileNavigationExternalLink {...link}/>
+                        {/* Links */}
+                        {this.props.links &&
+                            this.props.links.map((link) => (
+                                <MobileNavigationLink 
+                                    key={link.text}
+                                    {...link}
+                                />
                             ))
                         }
                     </ul>

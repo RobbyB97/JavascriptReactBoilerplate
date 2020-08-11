@@ -8,6 +8,10 @@ import DesktopNavigation from './DesktopNavigation/DesktopNavigation';
 import MobileNavigation from './MobileNavigation/MobileNavigation';
 
 
+/* Config */
+import links from '../../config/navigation';
+
+
 /* Component */
 export class Navigation extends React.Component {
     constructor(props) {
@@ -15,36 +19,16 @@ export class Navigation extends React.Component {
     };
 
     render() {
-        const internal_links = [
-            {
-                route: "/",
-                text: "Home"
-            }
-        ]
-        const external_links = [
-            {
-                text: "Meet the Dev",
-                href: "https://bergers.dev",
-                external: true
-            }, {
-                text: "View on GitHub",
-                href: "https://github.com/RobbyB97/JavascriptReactBoilerplate",
-                external: true
-            }
-        ]
-
         return (
             <section id="Navigation">
                 <HomeButton />
 
                 <DesktopNavigation 
-                    internal_links={internal_links}
-                    external_links={external_links}
+                    links={links}
                 />
                 
                 <MobileNavigation 
-                    internal_links={internal_links}
-                    external_links={external_links}                    
+                    links={links}                  
                 />
             </section>
         );

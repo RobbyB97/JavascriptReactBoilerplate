@@ -11,7 +11,11 @@ import {MobileNavigation} from '../../../../../react/components/ui/MobileNavigat
 let component, navMenu_Mobile__Toggle;
 beforeEach(() => {
     navMenu_Mobile__Toggle = jest.fn();
-    component = shallow(<MobileNavigation navMenu_Mobile__Toggle={navMenu_Mobile__Toggle}/>);
+    component = shallow(
+        <MobileNavigation 
+            navMenu_Mobile__Toggle={navMenu_Mobile__Toggle}
+        />
+    );
 });
 
 

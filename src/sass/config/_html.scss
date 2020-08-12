@@ -1,5 +1,5 @@
 html {
-    color: $primaryColor;
+    color: $black;
     font-family: "Montserrat", sans-serif;
 
     &[data-Mobile_Nav=false] {
@@ -18,14 +18,14 @@ html {
     }
 }
 
+h1, h2, h3, h4, h5, h6 {
+    color: $primaryColor;
+}
+
 p {
-    color: $primaryColor_dark;
+    color: $black;
 }
 
 a {
     color: $primaryColor;
-}
-
-hr {
-    border-color: $primaryColor;
 }

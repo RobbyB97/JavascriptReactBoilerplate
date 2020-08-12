@@ -7,6 +7,7 @@
 .DesktopNavigationLink:hover {
     .DesktopNavigationLink__link {
         border-bottom: 2px solid $primaryColor;
+        color: $black;
     }
 
     .DesktopNavigationLink__sublink_list {

@@ -12,6 +12,7 @@ exports[`Render Home button component 1`] = `
     to="/"
   >
     <img
+      alt="Home"
       src="/dist/images/icons/ReactIconWhite.png"
     />
   </NavLink>

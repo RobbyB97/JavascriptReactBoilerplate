@@ -1,4 +1,4 @@
-# JavascriptReactBoilerplate :rocket:
+# Redux Boilerplate :rocket:
 Think of this as a better create-react-app. It comes preconfigured with 
 -   React router 
 -   Redux 

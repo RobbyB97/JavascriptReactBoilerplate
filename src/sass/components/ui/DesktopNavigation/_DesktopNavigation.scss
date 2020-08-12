@@ -26,25 +26,3 @@
     flex-wrap: wrap;
     justify-content: flex-end;
 }
-
-
-.DesktopNavigation__link {
-    a {
-        color: $white;
-        transition: 100ms;
-        text-decoration: none;
-        opacity: 0.9;
-        font-size: $s_font;
-        border-bottom: 0px solid $white;
-
-        &:hover {
-            transition: 100ms;
-            opacity: 1;
-            border-bottom: 2px solid $white;
-        }
-    }
-
-    &:not(:last-child) {
-        margin-right: $m-font;
-    }
-}

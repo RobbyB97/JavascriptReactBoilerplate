@@ -8,7 +8,7 @@
 /* 'Active' state */
 .DesktopNavigationLink:hover {
     .DesktopNavigationLink__link {
-        border-bottom: 2px solid $white;
+        border-bottom: 2px solid $primaryColor;
     }
 
     .DesktopNavigationLink__sublink_list {
@@ -18,7 +18,7 @@
 
 
 .DesktopNavigationLink__link {
-    color: $white;
+    color: $primaryColor;
     text-decoration: none;
     transition: 100ms;
     display: block;
@@ -38,7 +38,7 @@
 
 .DesktopNavigationLink__sublink {
     &:not(:last-child) {
-        border-bottom: 1px solid $purple_light;
+        border-bottom: 1px solid $primaryColor_light;
     }
 }
 

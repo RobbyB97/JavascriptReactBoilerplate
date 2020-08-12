@@ -43,7 +43,8 @@ export class MobileNavigation extends React.Component {
             <section id="MobileNavigation">
                 <div 
                     className="MobileNavigation__button"
-                    onClick={this.navMenu_Mobile__Toggle}    
+                    onClick={this.navMenu_Mobile__Toggle}
+                    data-navMenu_Mobile={this.state.navMenu_Mobile}  
                 >
                     {this.props.navMenu_Mobile ? "✕" : "☰"}
                 </div>

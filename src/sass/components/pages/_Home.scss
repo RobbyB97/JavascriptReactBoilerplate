@@ -1,13 +1,13 @@
 #Home {
     opacity: 0;
-    background: $purple;
+    background: $white;
     font-family: "Montserrat";
     
     &[data-loading=true] {
         &[data-loaded=true] {
             transition: opacity 300ms;
             opacity: 1;
-            background: $purple;
+            background: $white;
         }
     }
 }
@@ -43,7 +43,7 @@
 .Home__content {
     width: 100%;
     min-height: calc(100vh - 200px);
-    background: $purple_dark;
+    background: $white;
 
     article {
         padding: 20px;
@@ -80,8 +80,8 @@
 .Home__link {
     padding: 8px;
     text-decoration: none;
-    background: $purple;
-    border-bottom: 4px solid $purple_shade;
+    background: $primaryColor;
+    border-bottom: 4px solid $primaryColor_dark;
     border-radius: 2px 2px 6px 6px;
     color: $white;
     font-weight: bold;

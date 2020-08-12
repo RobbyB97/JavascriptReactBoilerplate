@@ -34,7 +34,14 @@ export class HomeButton extends React.Component {
                     to="/"
                     className="HomeButton__logo"
                 >
-                    <img src="/dist/images/icons/ReactIconWhite.png" />
+                    {this.props.navMenu_Mobile ?
+                        /* Nav Menu HomeButton */
+                        <img src="/dist/images/icons/ReactIconWhite.png" alt="Home"/>
+                        :
+
+                        /* Default HomeButton */
+                        <img src="/dist/images/icons/favicon.png" alt="Home"/>
+                    }
                 </NavLink>
             </section>
         );

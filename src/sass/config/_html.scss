@@ -1,5 +1,5 @@
 html {
-    color: $white;
+    color: $primaryColor;
     font-family: "Montserrat", sans-serif;
 
     &[data-Mobile_Nav=false] {
@@ -18,6 +18,14 @@ html {
     }
 }
 
+p {
+    color: $primaryColor_dark;
+}
+
 a {
-    color: $white;
+    color: $primaryColor;
+}
+
+hr {
+    border-color: $primaryColor;
 }

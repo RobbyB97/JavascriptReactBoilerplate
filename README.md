@@ -6,7 +6,7 @@ Think of this as a better create-react-app. It comes preconfigured with
 -   Node.js
 -   Express 
 -   SASS 
--   CSS and SCSS source mapping 
+-   JS and SCSS source mapping 
 -   unit testing with Jest
 
 ---

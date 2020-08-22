@@ -2,7 +2,6 @@
     padding-top: 70px;
     width: 300px;
     margin: 0 auto;
-    min-height: calc(100vh - 120px);
 
     @media #{$tablet_breakpoint} {
         width: 80%;

@@ -26,6 +26,11 @@ export class MobileNavigationLink extends React.Component {
 
 
     navMenu_Mobile__Toggle = () => {
+        /* Disable scrolling */
+        const html = document.getElementsByTagName('HTML')[0];
+        html.setAttribute('data-Mobile_Nav', 'false');
+
+        /* Set state */
         this.props.navMenu_Mobile__Toggle();
         this.setState({
             navMenu_Mobile: !this.state.navMenu_Mobile

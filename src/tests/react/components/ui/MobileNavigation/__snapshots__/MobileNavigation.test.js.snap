@@ -6,7 +6,6 @@ exports[`Render MobileNavigation component 1`] = `
 >
   <div
     className="MobileNavigation__button"
-    data-navMenu_Mobile={false}
     onClick={[Function]}
   >
     ☰

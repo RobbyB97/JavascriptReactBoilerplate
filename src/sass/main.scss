@@ -8,6 +8,11 @@
     './config/html';
 
 
+/* Mixins */
+@import
+    './mixins/page';
+
+
 /* Common Components */
 @import
     './components/common/Header',

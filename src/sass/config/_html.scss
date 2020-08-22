@@ -1,5 +1,6 @@
 html {
     font-family: $sansSerif;
+    background: $backgroundColor;
 
     &[data-Mobile_Nav=false] {
         overflow: unset;

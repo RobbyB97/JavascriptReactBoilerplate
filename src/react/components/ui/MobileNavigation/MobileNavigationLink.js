@@ -30,11 +30,8 @@ export class MobileNavigationLink extends React.Component {
         const html = document.getElementsByTagName('HTML')[0];
         html.setAttribute('data-Mobile_Nav', 'false');
 
-        /* Set state */
+        /* Dispatch */
         this.props.navMenu_Mobile__Toggle();
-        this.setState({
-            navMenu_Mobile: !this.state.navMenu_Mobile
-        });
     };
 
 

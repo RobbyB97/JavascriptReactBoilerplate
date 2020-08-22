@@ -14,6 +14,11 @@ exports[`Render Navigation component 1`] = `
           "text": "Home",
         },
         Object {
+          "href": "/StyleGuide",
+          "internal": true,
+          "text": "Style Guide",
+        },
+        Object {
           "href": "https://bergers.dev",
           "internal": false,
           "text": "Meet the Dev",
@@ -33,6 +38,11 @@ exports[`Render Navigation component 1`] = `
           "href": "/",
           "internal": true,
           "text": "Home",
+        },
+        Object {
+          "href": "/StyleGuide",
+          "internal": true,
+          "text": "Style Guide",
         },
         Object {
           "href": "https://bergers.dev",

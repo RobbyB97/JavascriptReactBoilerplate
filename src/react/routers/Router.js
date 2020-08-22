@@ -12,6 +12,7 @@ import Footer from '../components/common/Footer';
 /* Pages/Routes */
 import Home from '../components/pages/Home';
 import Wildcard from '../components/pages/Wildcard';
+import StyleGuide from '../components/pages/StyleGuide';
 
 
 /* Router */
@@ -61,6 +62,12 @@ export class Router extends React.Component {
                         <Route 
                             path="/"
                             component={Home}
+                            exact
+                        />
+
+                        <Route 
+                            path="/StyleGuide"
+                            component={StyleGuide}
                             exact
                         />
 

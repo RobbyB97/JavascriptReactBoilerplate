@@ -16,6 +16,11 @@ exports[`Render Router 1`] = `
       />
       <Route
         component={[Function]}
+        exact={true}
+        path="/StyleGuide"
+      />
+      <Route
+        component={[Function]}
         path="/*"
       />
     </Switch>

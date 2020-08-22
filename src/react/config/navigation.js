@@ -10,6 +10,10 @@ export default [
         text: "Home",
         internal: true
     }, {
+        href: "/StyleGuide",
+        text: "Style Guide",
+        internal: true
+    }, {
         text: "Meet the Dev",
         href: "https://bergers.dev",
         internal: false

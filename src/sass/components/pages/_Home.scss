@@ -1,15 +1,6 @@
 #Home {
-    opacity: 0;
     background: $white;
     font-family: "Montserrat";
-    
-    &[data-loading=true] {
-        &[data-loaded=true] {
-            transition: opacity 300ms;
-            opacity: 1;
-            background: $white;
-        }
-    }
 }
 
 

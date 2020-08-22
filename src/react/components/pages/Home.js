@@ -11,51 +11,22 @@ import {page_ID__Set} from '../../redux/actions/page';
 export class Home extends React.Component {
     constructor(props) {
         super(props);
-        this.state = {
-            loaded: false,
-            loading: false
-        };
     };
 
 
     componentWillMount() {
-        this.load();
         this.page_ID__Set('Home');
     };
 
 
     page_ID__Set = (id) => {
-        this.props.page_ID__Set('Home');
-    };
-
-
-    load = () => {
-        const $pageLoader = document.querySelector('.page-loader');
-
-        // Disable loader
-        if ($pageLoader) {
-            $pageLoader.setAttribute('data-loading', true);
-            this.setState({
-                loading: true
-            });
-        };
-
-        // Fade in React app
-        setTimeout(() => {
-            $pageLoader.setAttribute('data-loaded', true);
-            this.setState({
-                loaded: true
-            });
-        }, 300);
+        this.props.page_ID__Set(id);
     };
 
 
     render() {
         return (
-            <div id="Home" 
-                data-loading={this.state.loading}
-                data-loaded={this.state.loaded}
-            >
+            <div id="Home">
                 <section className="Home__header">
                     <h2>Redux</h2>
                     <h2>Boilerplate.</h2>

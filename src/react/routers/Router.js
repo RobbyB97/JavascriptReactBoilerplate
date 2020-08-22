@@ -17,7 +17,32 @@ import Home from '../components/pages/Home';
 export class Router extends React.Component {
     constructor(props) {
         super(props);
-    }
+        this.state = {
+            loaded: false,
+            loading: false
+        };
+    };
+
+
+    componentWillMount() {
+        const $pageLoader = document.querySelector('.page-loader');
+
+        // Disable loader
+        if ($pageLoader) {
+            $pageLoader.setAttribute('data-loading', true);
+            this.setState({
+                loading: true
+            })
+        };
+
+        // Fade in React app
+        setTimeout(() => {
+            $pageLoader.setAttribute('data-loaded', true);
+            this.setState({
+                loaded: true
+            });
+        }, 300);
+    };
 
 
     render() {
@@ -26,6 +51,8 @@ export class Router extends React.Component {
                 <div 
                     id="Router"
                     data-page_ID={this.props.page_ID}
+                    data-loading={this.state.loading}
+                    data-loaded={this.state.loaded}
                 >
                     <Header />
 
@@ -41,8 +68,8 @@ export class Router extends React.Component {
                 </div>
             </BrowserRouter>
         );
-    }
-}
+    };
+};
 
 
 /* Connect to store */

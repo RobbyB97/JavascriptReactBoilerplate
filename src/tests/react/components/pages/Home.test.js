@@ -8,13 +8,11 @@ import {Home} from '../../../../react/components/pages/Home';
 
 
 /* Test Config */
-let component, load, page_ID__Set;
+let component, page_ID__Set;
 beforeEach(() => {
-    load = jest.fn();
     page_ID__Set = jest.fn();
     component = shallow(
         <Home 
-            load={load}
             page_ID__Set={page_ID__Set}
         />
     );
@@ -24,19 +22,6 @@ beforeEach(() => {
 /* Tests */
 test('Render Home page', () => {
     expect(component).toMatchSnapshot();
-});
-
-
-test('Initial state', () => {
-    expect(component.state('loaded')).toBe(false);
-    expect(component.state('loading')).toBe(false);    
-});
-
-
-test('Load function', () => {
-    setTimeout(() => {
-        expect(load).toHaveBeenCalled();
-    }, 500);
 });
 
 

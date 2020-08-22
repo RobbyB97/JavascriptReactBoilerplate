@@ -1,6 +1,5 @@
 html {
-    color: $black;
-    font-family: "Montserrat", sans-serif;
+    font-family: $sansSerif;
 
     &[data-Mobile_Nav=false] {
         overflow: unset;
@@ -19,13 +18,13 @@ html {
 }
 
 h1, h2, h3, h4, h5, h6 {
-    color: $primaryColor;
+    color: $headerColor;
 }
 
 p {
-    color: $black;
+    color: $textColor;
 }
 
 a {
-    color: $primaryColor;
+    color: $linkColor;
 }

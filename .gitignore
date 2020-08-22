@@ -21,3 +21,5 @@ public/dist/bundle.js
 
 # Firebase
 /.firebase/
+.firebaserc
+firebase.json

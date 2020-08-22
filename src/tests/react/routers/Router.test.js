@@ -28,7 +28,7 @@ test('Render Router', () => {
 test('Router initial state', () => {
     expect(component.state('loaded')).toBe(false);
     expect(component.state('loading')).toBe(false);
-})
+});
 
 
 test('Router load function', () => {

@@ -33,7 +33,7 @@ export class Router extends React.Component {
             $pageLoader.setAttribute('data-loading', true);
             this.setState({
                 loading: true
-            })
+            });
         };
 
         // Fade in React app

@@ -22,7 +22,7 @@ router.get('/', (req, res) => {
     } catch(e) {
         res.send();
         console.log(
-            chalk.red('An error occured on the homepage: '),
+            chalk.red('An error occured: '),
             '\n',
             `${e}`
         );
@@ -31,12 +31,12 @@ router.get('/', (req, res) => {
 
 router.get('/*', (req, res) => {
     try {
-        return res.sendFile(wildcardRoute);
+        return res.sendFile(appRoute);
 
     } catch(e) {
         res.send();
         console.log(
-            chalk.red('An error occured on the homepage: '),
+            chalk.red('An error occured: '),
             '\n',
             `${e}`
         );

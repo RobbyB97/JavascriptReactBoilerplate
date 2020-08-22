@@ -14,6 +14,10 @@ exports[`Render Router 1`] = `
         exact={true}
         path="/"
       />
+      <Route
+        component={[Function]}
+        path="/*"
+      />
     </Switch>
     <Footer />
   </div>

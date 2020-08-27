@@ -1,10 +1,10 @@
-#Home {
+#Default {
     @include page;
     font-family: $sansSerif;
 }
 
 
-.Home__header {
+.Default__header {
     width: 300px;
     margin: 0 auto;
 
@@ -32,15 +32,15 @@
 }
 
 
-.Home__tagline {
+.Default__tagline {
     text-align: center;
     font-size: 1.2em;
     color: $primaryColor_dark;
 }
 
 
-.Home__links {
-    .Home__link {
+.Default__links {
+    .Default__link {
         display: inline-block;
         
         &:not(:last-child) {
@@ -50,7 +50,7 @@
 }
 
 
-.Home__content {
+.Default__content {
     article {
         padding: 20px;
         text-align: center;
@@ -87,7 +87,7 @@
 }
 
 
-.Home__link {
+.Default__link {
     padding: 8px;
     text-decoration: none;
     background: $primaryColor;
@@ -107,7 +107,7 @@
 }
 
 
-.Home__donate {
+.Default__donate {
     opacity: 0.8;
     
     p {

@@ -1,11 +1,11 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Render Home page 1`] = `
+exports[`Render Default page 1`] = `
 <div
-  id="Home"
+  id="Default"
 >
   <section
-    className="Home__header"
+    className="Default__header"
   >
     <h2>
       Redux
@@ -18,26 +18,26 @@ exports[`Render Home page 1`] = `
     </h4>
   </section>
   <section
-    className="Home__content"
+    className="Default__content"
   >
     <article
-      className="Home__links"
+      className="Default__links"
     >
       <a
-        className="Home__link"
+        className="Default__link"
         href="https://github.com/RobbyB97/JavascriptReactBoilerplate"
       >
         View on GitHub
       </a>
       <a
-        className="Home__link"
+        className="Default__link"
         href="https://paypal.me/robbybobby123"
       >
         Donate
       </a>
     </article>
     <p
-      className="Home__tagline"
+      className="Default__tagline"
     >
       create-react-app, but better.
     </p>
@@ -47,7 +47,7 @@ exports[`Render Home page 1`] = `
       </p>
     </article>
     <article
-      className="Home__donate"
+      className="Default__donate"
     >
       <p>
         Creating software such as this boilerplate takes a lot of time, effort, attention to detail, and the occasional excellent anger management. If you found this boilerplate helpful, please consider 

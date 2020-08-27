@@ -4,7 +4,7 @@ import {shallow} from 'enzyme';
 
 
 /* Component */
-import {Home} from '../../../../react/components/pages/Home';
+import {Default} from '../../../../react/components/pages/Default';
 
 
 /* Test Config */
@@ -12,7 +12,7 @@ let component, page_ID__Set;
 beforeEach(() => {
     page_ID__Set = jest.fn();
     component = shallow(
-        <Home 
+        <Default 
             page_ID__Set={page_ID__Set}
         />
     );
@@ -20,7 +20,7 @@ beforeEach(() => {
 
 
 /* Tests */
-test('Render Home page', () => {
+test('Render Default page', () => {
     expect(component).toMatchSnapshot();
 });
 

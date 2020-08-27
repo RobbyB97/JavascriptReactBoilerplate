@@ -10,7 +10,7 @@ import Footer from '../components/common/Footer';
 
 
 /* Pages/Routes */
-import Home from '../components/pages/Home';
+import Default from '../components/pages/Default';
 import Wildcard from '../components/pages/Wildcard';
 import StyleGuide from '../components/pages/StyleGuide';
 
@@ -61,7 +61,7 @@ export class Router extends React.Component {
                     <Switch>
                         <Route 
                             path="/"
-                            component={Home}
+                            component={Default}
                             exact
                         />
 

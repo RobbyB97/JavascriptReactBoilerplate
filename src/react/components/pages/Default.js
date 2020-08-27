@@ -8,14 +8,14 @@ import {page_ID__Set} from '../../redux/actions/page';
 
 
 /* Component */
-export class Home extends React.Component {
+export class Default extends React.Component {
     constructor(props) {
         super(props);
     };
 
 
     componentWillMount() {
-        this.page_ID__Set('Home');
+        this.page_ID__Set('Default');
     };
 
 
@@ -26,31 +26,31 @@ export class Home extends React.Component {
 
     render() {
         return (
-            <div id="Home">
-                <section className="Home__header">
+            <div id="Default">
+                <section className="Default__header">
                     <h2>Redux</h2>
                     <h2>Boilerplate.</h2>
                     <h4>By Robby Bergers</h4>
                 </section>
 
-                <section className="Home__content">
-                    <article className="Home__links">
+                <section className="Default__content">
+                    <article className="Default__links">
                         <a 
-                            className="Home__link"
+                            className="Default__link"
                             href="https://github.com/RobbyB97/JavascriptReactBoilerplate"
                         >
                             View on GitHub
                         </a>
 
                         <a
-                            className="Home__link"
+                            className="Default__link"
                             href="https://paypal.me/robbybobby123"
                         >
                             Donate
                         </a>
                     </article>
 
-                    <p className="Home__tagline">
+                    <p className="Default__tagline">
                         create-react-app, but better.
                     </p>
 
@@ -60,7 +60,7 @@ export class Home extends React.Component {
                         </p>
                     </article>
                     
-                    <article className="Home__donate">
+                    <article className="Default__donate">
                         <p>
                             Creating software such as this boilerplate takes a lot of time, effort, attention to detail, and the occasional excellent anger management. If you found this boilerplate helpful, please consider <a href="https://paypal.me/robbybobby123">donating</a>.
                         </p>
@@ -80,4 +80,4 @@ const mapDispatchToProps = (dispatch) => ({
 });
 
 
-export default connect(undefined, mapDispatchToProps)(Home);
+export default connect(undefined, mapDispatchToProps)(Default);

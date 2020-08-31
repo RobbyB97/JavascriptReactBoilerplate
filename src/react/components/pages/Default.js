@@ -51,7 +51,7 @@ export class Default extends React.Component {
                     </article>
 
                     <p className="Default__tagline">
-                        create-react-app, but better.
+                        A better create-react-app.
                     </p>
 
                     <article>

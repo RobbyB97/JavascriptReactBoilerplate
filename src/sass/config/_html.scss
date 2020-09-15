@@ -2,17 +2,17 @@ html {
     font-family: $sansSerif;
     background: $backgroundColor;
 
-    &[data-Mobile_Nav=false] {
+    &[data-mobile_nav=false] {
         overflow: unset;
         overflow-x: hidden;
     }
     
-    &[data-Mobile_Nav=true] {
+    &[data-mobile_nav=true] {
         overflow: hidden;
     }
 
     @media #{$tablet_breakpoint} {
-        &[data-Mobile_Nav=false], &[data-Mobile_Nav=true] {
+        &[data-mobile_nav=false], &[data-mobile_nav=true] {
             overflow: unset;
         }
     }

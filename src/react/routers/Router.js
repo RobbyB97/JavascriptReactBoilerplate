@@ -52,7 +52,7 @@ export class Router extends React.Component {
             <BrowserRouter>
                 <div 
                     id="Router"
-                    data-page_ID={this.props.page_ID}
+                    data-page_id={this.props.page_ID}
                     data-loading={this.state.loading}
                     data-loaded={this.state.loaded}
                 >

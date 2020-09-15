@@ -25,9 +25,9 @@ export class MobileNavigation extends React.Component {
         /* Disable/enable scrolling */
         const html = document.getElementsByTagName('HTML')[0];
         if (this.props.navMenu_Mobile) {
-            html.setAttribute('data-Mobile_Nav', 'false');
+            html.setAttribute('data-mobile_nav', 'false');
         } else {
-            html.setAttribute('data-Mobile_Nav', 'true');
+            html.setAttribute('data-mobile_nav', 'true');
         }
         
         /* Set state */
@@ -44,7 +44,7 @@ export class MobileNavigation extends React.Component {
                 <div 
                     className="MobileNavigation__button"
                     onClick={this.navMenu_Mobile__Toggle}
-                    data-navMenu_Mobile={this.props.navMenu_Mobile}  
+                    data-navmenu_mobile={this.props.navMenu_Mobile}  
                 >
                     {this.props.navMenu_Mobile ? "✕" : "☰"}
                 </div>

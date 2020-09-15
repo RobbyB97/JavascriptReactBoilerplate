@@ -13,11 +13,11 @@
     font-size: 2.5em;
     z-index: 8;
 
-    &[data-navMenu_Mobile=false] {
+    &[data-navmenu_mobile=false] {
         color: $primaryColor;
     }
 
-    &[data-navMenu_Mobile=true] {
+    &[data-navmenu_mobile=true] {
         color: $white;
     }
 }

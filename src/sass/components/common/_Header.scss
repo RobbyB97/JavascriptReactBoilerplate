@@ -1,3 +1,13 @@
 #Header {
+    background: $primaryColor;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 65px;
 
+
+    @media #{$desktop_breakpoint} {
+        height: 50px;
+    }
 }

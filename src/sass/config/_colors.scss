@@ -7,7 +7,7 @@ $shadow_thick: rgba(0, 0, 0, 0.5);
 /* Grayscale */
 $black: #080808;
 $gray: #414141;
-$white: #e8e8e8;
+$offWhite: #e8e8e8;
 
 
 /* Theme Colors */
@@ -15,7 +15,7 @@ $primaryColor: #6563ff;
 $primaryColor_light: saturate(lighten($primaryColor, 10%), 20%);
 $primaryColor_dark: desaturate(darken($primaryColor, 20%), 30%);
 
-$backgroundColor: $white;
+$backgroundColor: $offWhite;
 
 $headerColor: $primaryColor;
 $textColor: $black;

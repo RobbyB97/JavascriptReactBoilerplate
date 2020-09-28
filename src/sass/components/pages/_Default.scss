@@ -1,32 +1,50 @@
 #Default {
     @include page;
+    padding-top: 0;
     font-family: $sansSerif;
 }
 
 
 .Default__header {
-    width: 300px;
-    margin: 0 auto;
+    background-color: $primaryColor;
 
-    h2 {
-        font-size: 3em;
-        text-align: left;
+}
+
+
+.Default__headerContent {
+    @include innerContent;
+    padding-top: 70px;
+    padding-bottom: 32px;
+
+    h1 {
+        font-size: 2.8em;
+        color: $offWhite;
         margin: 0;
     }
+
+    p {
+        color: lighten($primaryColor, 22%);
+    }
+
+    a {
+        text-decoration: underline;
+        color: lighten($primaryColor, 22%);
+    }
+
 
     @media #{$tablet_breakpoint} {
         width: 400px;
 
-        h2 {
-            font-size: 4.2em;
+        h1 {
+            font-size: 3em;
         }
     }
 
     @media #{$desktop_breakpoint} {
-        width: 500px;
+        width: 600px;
 
-        h2 {
-            font-size: 5.2em;
+        h1 {
+            font-size: 3.2em;
         }
     }
 }
@@ -40,12 +58,15 @@
 
 
 .Default__links {
-    .Default__link {
-        display: inline-block;
-        
-        &:not(:last-child) {
-            margin-bottom: 1em;
-        }
+
+}
+
+
+.Default__link {
+    display: inline-block;
+    
+    &:not(:last-child) {
+        margin-bottom: 1em;
     }
 }
 
@@ -91,18 +112,15 @@
     padding: 8px;
     text-decoration: none;
     background: $primaryColor;
-    border-bottom: 4px solid $primaryColor_dark;
-    border-radius: 2px 2px 6px 6px;
-    color: $white;
+    color: $offWhite;
     font-weight: bold;
     font-size: $mFont;
     margin: 0 4px;
+    transition: 200ms;
 
-    &:active {
-        border-bottom: none;
-        border-radius: 2px;
-        position: relative;
-        top: 4px;
+    &:active, &:hover {
+        background: $offWhite;
+        color: $primaryColor;
     }
 }
 

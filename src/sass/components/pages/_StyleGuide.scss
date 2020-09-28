@@ -1,3 +1,14 @@
 #StyleGuide {
     @include page;
 }
+
+
+.StyleGuide__header {
+    @include innerContent;
+    border-bottom: 1px solid lighten($primaryColor, 15%);
+}
+
+
+.StyleGuide__content {
+    @include innerContent;
+}

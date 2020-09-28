@@ -12,14 +12,7 @@
     right: 12px;
     font-size: 2.5em;
     z-index: 8;
-
-    &[data-navmenu_mobile=false] {
-        color: $primaryColor;
-    }
-
-    &[data-navmenu_mobile=true] {
-        color: $white;
-    }
+    color: $offWhite;
 }
 
 

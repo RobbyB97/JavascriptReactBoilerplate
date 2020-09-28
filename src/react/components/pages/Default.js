@@ -28,9 +28,18 @@ export class Default extends React.Component {
         return (
             <div id="Default">
                 <section className="Default__header">
-                    <h2>Redux</h2>
-                    <h2>Boilerplate.</h2>
-                    <h4>By Robby Bergers</h4>
+                    <div className="Default__headerContent">
+                        <h1>Redux <br/>Boilerplate.</h1>
+                        <p>By&nbsp;
+                            <a
+                                href="https://bergers.dev"
+                                target="_blank"
+                                rel="noopener"
+                            >
+                                Robby Bergers
+                            </a>
+                        </p>
+                    </div>
                 </section>
 
                 <section className="Default__content">

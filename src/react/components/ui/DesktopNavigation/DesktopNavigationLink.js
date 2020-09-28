@@ -14,15 +14,19 @@ export class DesktopNavigationLink extends React.Component {
             <li className="DesktopNavigationLink">
                 {this.props.internal == true ?
                     /* Internal link */
-                    <NavLink className="DesktopNavigationLink__link"
+                    <NavLink 
+                        className="DesktopNavigationLink__link"
                         to={this.props.href}
+                        activeClassName="current"
+                        exact
                     >
                         {this.props.text}
                     </NavLink>
                     :
 
                     /* External link */
-                    <a className="DesktopNavigationLink__link"
+                    <a 
+                        className="DesktopNavigationLink__link"
                         href={this.props.href}
                     >
                         {this.props.text}

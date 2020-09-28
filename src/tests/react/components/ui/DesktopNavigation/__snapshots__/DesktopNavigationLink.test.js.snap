@@ -46,9 +46,10 @@ exports[`Render DesktopNavigationLink component with internal link 1`] = `
   className="DesktopNavigationLink"
 >
   <NavLink
-    activeClassName="active"
+    activeClassName="current"
     aria-current="page"
     className="DesktopNavigationLink__link"
+    exact={true}
     to="/"
   >
     Internal link
@@ -61,9 +62,10 @@ exports[`Render DesktopNavigationLink component with internal link and sublink 1
   className="DesktopNavigationLink"
 >
   <NavLink
-    activeClassName="active"
+    activeClassName="current"
     aria-current="page"
     className="DesktopNavigationLink__link"
+    exact={true}
     to="/"
   >
     Internal link with sublink

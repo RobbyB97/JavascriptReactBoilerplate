@@ -1,14 +1,9 @@
 #HomeButton {
     position: fixed;
-    top: 10px;
+    top: 8px;
     left: 10px;
     border-radius: 50%;
     z-index: 8;
-
-    @media #{$tablet_breakpoint} {
-        top: 1em;
-        left: 1em;
-    }
 }
 
 
@@ -24,9 +19,9 @@
         animation-timing-function: linear;
     }
 
-    @media #{$tablet_breakpoint} {
+    @media #{$desktop_breakpoint} {
         img {
-            width: 50px;
+            width: 30px;
             height: auto;
             margin: 3px 4.5px;    
         }

@@ -43,7 +43,7 @@
     "babel-plugin-transform-object-rest-spread": "^6.26.0",
     "babel-preset-env": "^1.5.2",
     "babel-preset-react": "^6.24.1",
-    "bootstrap": "^4.3.1",
+    "bootstrap": "^4.5.2",
     "chalk": "^2.4.2",
     "css-loader": "^0.28.4",
     "express": "^4.17.1",
@@ -68,13 +68,13 @@
     "concurrently": "^4.1.2",
     "env-cmd": "^8.0.2",
     "enzyme": "^3.0.0",
-    "enzyme-adapter-react-16": "^1.0.0",
-    "enzyme-to-json": "^3.0.1",
+    "enzyme-adapter-react-16": "^1.15.5",
+    "enzyme-to-json": "^3.6.1",
     "jest": "^20.0.4",
     "node-sass": "^4.14.1",
     "parallelshell": "^3.0.1",
     "react-test-renderer": "^16.0.0",
-    "sass": "^1.22.7",
+    "sass": "^1.26.11",
     "webpack-dev-server": "^3.8.0"
   }
 }

@@ -1,6 +1,6 @@
 /* Packages */
 import React from 'react';
-import {NavLink} from 'react-router-dom';
+import { NavHashLink as NavLink } from 'react-router-hash-link';
 
 
 /* Component */

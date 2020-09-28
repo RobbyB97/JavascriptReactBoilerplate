@@ -61,15 +61,13 @@ exports[`Render MobileNavigationLink component with internal link 1`] = `
 <li
   className="MobileNavigationLink"
 >
-  <NavLink
-    activeClassName="active"
-    aria-current="page"
+  <ForwardRef
     className="MobileNavigationLink__link"
     onClick={[Function]}
     to="/"
   >
     Internal link
-  </NavLink>
+  </ForwardRef>
 </li>
 `;
 
@@ -77,15 +75,13 @@ exports[`Render MobileNavigationLink component with internal link and sublink 1`
 <li
   className="MobileNavigationLink"
 >
-  <NavLink
-    activeClassName="active"
-    aria-current="page"
+  <ForwardRef
     className="MobileNavigationLink__link"
     onClick={[Function]}
     to="/"
   >
     Internal link with sublink
-  </NavLink>
+  </ForwardRef>
   <button
     className="MobileNavigationLink__sublink_button"
     data-active={false}
@@ -102,15 +98,13 @@ exports[`Render MobileNavigationLink component with internal link and sublink 1`
       className="MobileNavigationLink__sublink"
       key="Internal sublink"
     >
-      <NavLink
-        activeClassName="active"
-        aria-current="page"
+      <ForwardRef
         className="MobileNavigationLink__sublink_link"
         onClick={0}
         to="/"
       >
         Internal sublink
-      </NavLink>
+      </ForwardRef>
     </li>
   </ul>
 </li>

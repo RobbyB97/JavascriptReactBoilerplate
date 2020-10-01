@@ -5,5 +5,10 @@ exports[`Render Header component 1`] = `
   id="Header"
 >
   <Navigation />
+  <img
+    className="Header__forkMe"
+    data-visible={false}
+    src="/dist/images/forkmeongithub.png"
+  />
 </header>
 `;

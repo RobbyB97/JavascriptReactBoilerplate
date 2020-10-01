@@ -1,5 +1,6 @@
 /* Packages */
 import React from 'react';
+import {connect} from 'react-redux';
 
 
 /* Components */
@@ -12,10 +13,24 @@ export class Header extends React.Component {
         return (
             <header id="Header">
                 <Navigation />
+
+                <img 
+                    className="Header__forkMe"
+                    src="/dist/images/forkmeongithub.png"
+                    data-visible={this.props.page_ID == "Default"}
+                />
             </header>
         );
     };
 };
 
 
-export default Header;
+/* Connect to store */
+const mapStateToProps = (state) => {
+    return {
+        page_ID: state.page.id
+    };
+};
+
+
+export default connect(mapStateToProps, undefined)(Header);

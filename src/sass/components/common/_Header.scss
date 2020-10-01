@@ -5,9 +5,23 @@
     left: 0;
     right: 0;
     height: 65px;
+    z-index: 2;
 
 
     @media #{$desktop_breakpoint} {
         height: 50px;
+    }
+}
+
+
+.Header__forkMe {
+    &[data-visible=false] {
+        display: none;
+    }
+
+    &[data-visible=true] {
+        position: absolute;
+        top: 0;
+        right: 0;
     }
 }

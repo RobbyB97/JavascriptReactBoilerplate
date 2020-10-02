@@ -22,7 +22,7 @@ console.log(
 
 
 /* Configure express */
-const app = express();
+const app = new express();
 app.use(express.static(publicPath));
 app.use(express.json());
 app.use(mainRouter);

@@ -1,11 +1,8 @@
 /* Packages */
-const express = require('express');
-const path = require('path');
-const chalk = require('chalk');
+import {Request, Response} from 'express';
 
 
 /* Local files */
-const publicPath = path.join(__dirname, '../../public/');
 const appRoute = path.join(publicPath, 'index.html');
 const wildcardRoute = path.join(publicPath, '404.html');
 
@@ -15,7 +12,7 @@ const router = new express.Router();
 
 
 /* Routes */
-router.get('/', (req, res) => {
+router.get('/', (req: Request, res: Response) => {
     try {
         return res.sendFile(appRoute);
     
@@ -29,7 +26,7 @@ router.get('/', (req, res) => {
     }
 });
 
-router.get('/*', (req, res) => {
+router.get('/*', (req: Request, res: Response) => {
     try {
         return res.sendFile(appRoute);
 

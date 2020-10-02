@@ -15,6 +15,9 @@ node_modules/
 # Source maps
 *.map
 
+# Build files
+/build/
+
 # Bundle output
 public/dist/bundle.css
 public/dist/bundle.js

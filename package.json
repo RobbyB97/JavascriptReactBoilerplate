@@ -37,6 +37,7 @@
   },
   "homepage": "https://github.com/RobbyB97/JavascriptReactBoilerplate#readme",
   "dependencies": {
+    "@types/react-router-hash-link": "^1.2.1",
     "babel-cli": "^6.26.0",
     "babel-core": "^6.26.3",
     "babel-loader": "^7.1.1",
@@ -71,6 +72,8 @@
     "@types/node": "^14.11.2",
     "@types/react": "^16.9.50",
     "@types/react-dom": "^16.9.8",
+    "@types/react-redux": "^7.1.9",
+    "@types/react-router-dom": "^5.1.5",
     "concurrently": "^4.1.2",
     "env-cmd": "^8.0.2",
     "enzyme": "^3.0.0",

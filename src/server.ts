@@ -1,4 +1,3 @@
-/* Packages */
 const express = require('express');
 const https = require('https');
 const http = require('http');
@@ -8,8 +7,8 @@ const chalk = require('chalk');
 
 
 /* Local files */
-const publicPath = path.join(__dirname, '../public');
-const mainRouter = require('./routers/app');
+export const publicPath = path.join(__dirname, '../public');
+export const mainRouter = require('./routers/app');
 
 
 /* Environment variables */

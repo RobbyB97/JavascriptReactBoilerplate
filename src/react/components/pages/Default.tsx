@@ -1,28 +1,28 @@
-/* Packages */
 import React from 'react';
-import {connect} from 'react-redux';
+import { connect } from 'react-redux';
+import { Dispatch } from 'redux';
+
+import { PageType } from './pageType';
+import { page_ID__Set } from '../../redux/actions/page';
 
 
-/* Actions */
-import {page_ID__Set} from '../../redux/actions/page';
+interface Props extends PageType { }
+
+interface State { }
 
 
-/* Component */
-export class Default extends React.Component {
-    constructor(props) {
+export class Default extends React.Component<Props, State> {
+    constructor(props: Props) {
         super(props);
-    };
-
+    }
 
     componentWillMount() {
         this.page_ID__Set('Default');
-    };
+    }
 
-
-    page_ID__Set = (id) => {
+    page_ID__Set = (id: string) => {
         this.props.page_ID__Set(id);
-    };
-
+    }
 
     render() {
         return (
@@ -77,13 +77,12 @@ export class Default extends React.Component {
                 </section>
             </div>
         );
-    };
-};
+    }
+}
 
 
-/* Connect to store */
-const mapDispatchToProps = (dispatch) => ({
-    page_ID__Set: (id) => {
+const mapDispatchToProps = (dispatch: Dispatch<any>) => ({
+    page_ID__Set: (id: string) => {
         dispatch(page_ID__Set(id));
     }
 });

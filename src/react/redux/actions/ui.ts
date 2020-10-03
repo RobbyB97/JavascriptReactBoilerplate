@@ -1,13 +1,22 @@
-export const navMenu_Mobile__Toggle = () => ({
-    type: 'MOBILE_NAV__TOGGLE'
-});
+import { 
+    MOBILE_NAV__TOGGLE, MOBILE_NAV__ON, MOBILE_NAV__OFF, UIActionTypes 
+} from '../types/ui';
 
 
-export const navMenu_Mobile__On = () => ({
-    type: 'MOBILE_NAV__ON'
-});
+export function navMenu_Mobile__Toggle(): UIActionTypes {
+    return {
+        type: MOBILE_NAV__TOGGLE
+    }
+}
 
+export function navMenu_Mobile__On(): UIActionTypes {
+    return {
+        type: MOBILE_NAV__ON
+    }
+}
 
-export const navMenu_Mobile__Off = () => ({
-    type: 'MOBILE_NAV__OFF'
-});
+export function navMenu_Mobile__Off(): UIActionTypes {
+    return {
+        type: MOBILE_NAV__OFF
+    }
+}

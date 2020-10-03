@@ -1,19 +1,25 @@
-/* Packages */
 import React from 'react';
-import {NavLink} from 'react-router-dom';
-import {connect} from 'react-redux';
+import { NavLink } from 'react-router-dom';
+import { connect } from 'react-redux';
+import { Dispatch } from 'redux';
 
-
-/* Actions */
 import {navMenu_Mobile__Toggle} from '../../redux/actions/ui';
 
 
-/* Component */
-export class HomeButton extends React.Component {
-    constructor(props) {
+interface Props {
+    navMenu_Mobile: boolean;
+    navMenu_Mobile__Toggle: () => void;
+}
+
+interface State {
+
+}
+
+
+export class HomeButton extends React.Component<Props, State> {
+    constructor(props: Props) {
         super(props);
     };
-
 
     navMenu_Mobile__Toggle = () => {
         /* Enable scrolling */
@@ -22,7 +28,6 @@ export class HomeButton extends React.Component {
         
         this.props.navMenu_Mobile__Toggle();
     };
-
 
     render() {
         return (
@@ -45,19 +50,19 @@ export class HomeButton extends React.Component {
                 </NavLink>
             </section>
         );
-    };
-};
+    }
+}
 
 
 /* Connect to store */
-const mapStateToProps = (state) => {
+const mapStateToProps = (state: any) => {
     return {
         navMenu_Mobile: state.ui.navMenu_Mobile
     };
 };
 
 
-const mapDispatchToProps = (dispatch) => ({
+const mapDispatchToProps = (dispatch: Dispatch<any>) => ({
     navMenu_Mobile__Toggle: () => {
         dispatch(navMenu_Mobile__Toggle());
     }

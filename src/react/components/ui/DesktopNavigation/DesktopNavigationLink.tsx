@@ -1,11 +1,16 @@
-/* Packages */
 import React from 'react';
 import { NavHashLink as NavLink } from 'react-router-hash-link';
 
+import { navigationLinksType } from '../../../data/navigationLinks';
 
-/* Component */
-export class DesktopNavigationLink extends React.Component {
-    constructor(props) {
+
+interface Props extends navigationLinksType { }
+
+interface State { }
+
+
+export class DesktopNavigationLink extends React.Component<Props, State> {
+    constructor(props: Props) {
         super(props);
     };
 

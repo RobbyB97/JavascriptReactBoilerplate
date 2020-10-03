@@ -1,14 +1,20 @@
-/* Packages */
 import React from 'react';
 
-
-/* Components */
 import DesktopNavigationLink from './DesktopNavigationLink';
+import {navigationLinksType} from '../../../data/navigationLinks'
 
 
-/* Component */
-export class DesktopNavigation extends React.Component {
-    constructor(props) {
+interface Props {
+    links: navigationLinksType[];
+}
+
+interface State {
+
+}
+
+
+export class DesktopNavigation extends React.Component<Props, State> {
+    constructor(props: Props) {
         super(props);
     };
 

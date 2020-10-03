@@ -1,29 +1,33 @@
-/* Packages */
 import React from 'react';
 import {connect} from 'react-redux';
 import {BrowserRouter, Route, Switch} from 'react-router-dom';
 
-
-/* Components */
 import Header from '../components/common/Header';
 import Footer from '../components/common/Footer';
-
-
-/* Pages/Routes */
 import Default from '../components/pages/Default';
 import Wildcard from '../components/pages/Wildcard';
 import StyleGuide from '../components/pages/StyleGuide';
 
 
+interface Props {
+    page_ID?: string;
+};
+
+interface State {
+    loading: boolean;
+    loaded: boolean;
+};
+
+
 /* Router */
-export class Router extends React.Component {
-    constructor(props) {
+export class Router extends React.Component<Props, State> {
+    constructor(props: Props) {
         super(props);
         this.state = {
             loaded: false,
             loading: false
         };
-    };
+    }
 
 
     componentWillMount() {
@@ -31,7 +35,7 @@ export class Router extends React.Component {
 
         // Disable loader
         if ($pageLoader) {
-            $pageLoader.setAttribute('data-loading', true);
+            $pageLoader.setAttribute('data-loading', 'true');
             this.setState({
                 loading: true
             });
@@ -39,12 +43,12 @@ export class Router extends React.Component {
 
         // Fade in React app
         setTimeout(() => {
-            $pageLoader.setAttribute('data-loaded', true);
+            $pageLoader && $pageLoader.setAttribute('data-loaded', 'true');
             this.setState({
                 loaded: true
             });
         }, 300);
-    };
+    }
 
 
     render() {
@@ -81,12 +85,12 @@ export class Router extends React.Component {
                 </div>
             </BrowserRouter>
         );
-    };
-};
+    }
+}
 
 
 /* Connect to store */
-const mapStateToProps = (state) => {
+const mapStateToProps = (state: any) => {
     return {
         page_ID: state.page.id
     };

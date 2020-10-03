@@ -1,8 +1,9 @@
-/* Packages */
-import {Request, Response} from 'express';
+import { Request, Response } from 'express';
+const express = require('express');
+const path = require('path');
+const chalk = require('chalk');
 
-
-/* Local files */
+import { publicPath } from '../server';
 const appRoute = path.join(publicPath, 'index.html');
 const wildcardRoute = path.join(publicPath, '404.html');
 

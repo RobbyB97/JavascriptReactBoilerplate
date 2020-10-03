@@ -1,18 +1,30 @@
-/* Packages */
-import {createStore, combineReducers} from 'redux'
+import { combineReducers } from 'redux';
+import { createStore } from 'redux';
+
+import { uiReducer } from '../reducers/ui';
+import { pageReducer } from '../reducers/page';
 
 
-/* Reducers */
-import UI_Reducer from '../reducers/ui';
-import Page_Reducer from '../reducers/page';
+const rootReducer = combineReducers({
+    ui: uiReducer,
+    page: pageReducer
+})
+
+export const configureStore = () => {
+    const store = createStore(rootReducer);
+    return store;
+};
 
 
-/* Store */
+
+export type RootState = ReturnType<typeof rootReducer>
+/*
 export default () => {
     return createStore(
         combineReducers({
-            ui: UI_Reducer,
-            page: Page_Reducer
+            ui: uiReducer,
+            page: pageReducer
         })
     );
 };
+*/

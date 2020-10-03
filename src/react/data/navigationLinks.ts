@@ -4,7 +4,20 @@
 
 */
 
-export default [
+
+export interface navigationLinksType {
+    href: string;
+    text: string;
+    internal?: boolean;
+    sublinks?: {
+        href: string;
+        text: string;
+        internal?: boolean;
+    }[]
+}
+
+
+export const navigationLinks: navigationLinksType[] = [
     {
         href: "/",
         text: "Home",
@@ -21,5 +34,5 @@ export default [
         text: "View on GitHub",
         href: "https://github.com/RobbyB97/JavascriptReactBoilerplate",
         internal: false
-    }
+    },
 ]

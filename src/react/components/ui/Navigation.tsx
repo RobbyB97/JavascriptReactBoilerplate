@@ -1,20 +1,22 @@
-/* Packages */
 import React from 'react';
 
-
-/* Components */
 import HomeButton from './HomeButton';
 import DesktopNavigation from './DesktopNavigation/DesktopNavigation';
 import MobileNavigation from './MobileNavigation/MobileNavigation';
+import {navigationLinks} from '../../data/navigationLinks';
 
 
-/* Config */
-import links from '../../config/navigation';
+interface Props {
+
+}
+
+interface State {
+
+}
 
 
-/* Component */
-export class Navigation extends React.Component {
-    constructor(props) {
+export class Navigation extends React.Component<Props, State> {
+    constructor(props: Props) {
         super(props);
     };
 
@@ -24,11 +26,11 @@ export class Navigation extends React.Component {
                 <HomeButton />
 
                 <DesktopNavigation 
-                    links={links}
+                    links={...navigationLinks}
                 />
                 
                 <MobileNavigation 
-                    links={links}                  
+                    links={...navigationLinks}                  
                 />
             </section>
         );

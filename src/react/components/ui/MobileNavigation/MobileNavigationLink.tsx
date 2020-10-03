@@ -1,16 +1,23 @@
-/* Packages */
 import React from 'react';
 import { NavHashLink as NavLink } from 'react-router-hash-link';
-import {connect} from 'react-redux';
+import { connect } from 'react-redux';
+import { Dispatch } from 'redux';
+
+import { navMenu_Mobile__Toggle } from '../../../redux/actions/ui';
+import { navigationLinksType } from '../../../data/navigationLinks';
 
 
-/* Actions */
-import {navMenu_Mobile__Toggle} from '../../../redux/actions/ui';
+interface Props extends navigationLinksType {
+    navMenu_Mobile__Toggle: any;
+};
+
+interface State {
+    sublink_Menu: boolean;
+}
 
 
-/* Component */
-export class MobileNavigationLink extends React.Component {
-    constructor(props) {
+export class MobileNavigationLink extends React.Component<Props, State> {
+    constructor(props: Props) {
         super(props);
         this.state = {
             sublink_Menu: false
@@ -18,14 +25,15 @@ export class MobileNavigationLink extends React.Component {
     };
 
 
-    sublink_Menu__Toggle = () => {
+    sublink_Menu__Toggle: any = () => {
         this.setState({
             sublink_Menu: !this.state.sublink_Menu
         });
+        
+        // TODO: Close navmenu mobile when sublink clicked
     };
 
-
-    navMenu_Mobile__Toggle = () => {
+    navMenu_Mobile__Toggle: any = () => {
         /* Disable scrolling */
         const html = document.getElementsByTagName('HTML')[0];
         html.setAttribute('data-Mobile_Nav', 'false');
@@ -90,8 +98,7 @@ export class MobileNavigationLink extends React.Component {
                                         className="MobileNavigationLink__sublink_link"
                                         to={sublink.href}
                                         onClick={
-                                            this.sublink_Menu__Toggle &
-                                            this.navMenu_Mobile__Toggle
+                                            this.sublink_Menu__Toggle
                                         }
                                     >
                                         {sublink.text}
@@ -103,8 +110,7 @@ export class MobileNavigationLink extends React.Component {
                                         className="MobileNavigationLink__sublink_link"
                                         href={sublink.href}
                                         onClick={
-                                            this.sublink_Menu__Toggle &
-                                            this.navMenu_Mobile__Toggle
+                                            this.sublink_Menu__Toggle
                                         }
                                     >
                                         {sublink.text}
@@ -121,7 +127,7 @@ export class MobileNavigationLink extends React.Component {
 
 
 /* Connect to store */
-const mapDispatchToProps = (dispatch) => ({
+const mapDispatchToProps = (dispatch: Dispatch<any>) => ({
     navMenu_Mobile__Toggle: () => {
         dispatch(navMenu_Mobile__Toggle());
     }

@@ -1,28 +1,29 @@
-/* Packages */
 import React from 'react';
-import {connect} from 'react-redux';
-import {NavLink} from 'react-router-dom';
+import { connect } from 'react-redux';
+import { NavLink } from 'react-router-dom';
+import { Dispatch } from 'redux';
+
+import { PageType } from './pageType';
+import { page_ID__Set } from '../../redux/actions/page';
 
 
-/* Actions */
-import {page_ID__Set} from '../../redux/actions/page';
+interface Props extends PageType { }
+
+interface State { }
 
 
-/* Component */
-export class StyleGuide extends React.Component {
-    constructor(props) {
+export class StyleGuide extends React.Component<Props, State> {
+    constructor(props: Props) {
         super(props);
-    };
-
+    }
 
     componentWillMount() {
         this.page_ID__Set('StyleGuide');
-    };
+    }
 
-
-    page_ID__Set = (id) => {
+    page_ID__Set = (id: string) => {
         this.props.page_ID__Set(id);
-    };
+    }
 
 
     render() {
@@ -82,13 +83,12 @@ export class StyleGuide extends React.Component {
                 </section>
             </div>
         );
-    };
-};
+    }
+}
 
 
-/* Connect to store */
-const mapDispatchToProps = (dispatch) => ({
-    page_ID__Set: (id) => {
+const mapDispatchToProps = (dispatch: Dispatch<any>) => ({
+    page_ID__Set: (id: string) => {
         dispatch(page_ID__Set(id));
     }
 });

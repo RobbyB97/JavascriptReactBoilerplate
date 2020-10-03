@@ -1,14 +1,20 @@
-/* Packages */
 import React from 'react';
 import {connect} from 'react-redux';
 
-
-/* Components */
 import Navigation from '../ui/Navigation';
 
 
-/* Component */
-export class Header extends React.Component {
+interface Props {
+    page_ID?: string;
+}
+
+interface State { }
+
+
+export class Header extends React.Component<Props, State> {
+    constructor(props: Props) {
+        super(props);
+    }
     render() {
         return (
             <header id="Header">
@@ -21,12 +27,12 @@ export class Header extends React.Component {
                 />
             </header>
         );
-    };
-};
+    }
+}
 
 
 /* Connect to store */
-const mapStateToProps = (state) => {
+const mapStateToProps = (state: any) => {
     return {
         page_ID: state.page.id
     };
